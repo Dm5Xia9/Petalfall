@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 42
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":199.800018,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u0435\u043F\u0435\u0441\u0442\u043E\u043A,
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":332.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u0435\u043F\u0435\u0441\u0442\u043E\u043A,
     \u0442\u0435\u0431\u0435 \u043A\u0430\u043A \u043E\u0431\u044B\u0447\u043D\u043E,
     \u0441 \u0434\u043E\u0431\u0430\u0432\u043A\u0430\u043C\u0438 \u0438\u043B\u0438
     \u0431\u0435\u0437?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0425\u0430\u0439\u0437\u0435\u043D\u0431\u0435\u0440\u0433\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
@@ -667,8 +667,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Esc
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  m_sharedMaterial: {fileID: -6318241824564722359, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  m_sharedMaterial: {fileID: 8978010341834086113, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -877,24 +877,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 49
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.800018,\"yPos\":159},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422...
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.5,\"yPos\":159},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422...
     *\u0442\u0441\u0446*... \u0442-\u0442\u044B \u0432-\u0432\u043E\u043E\u0431\u0449\u0435
     \u043A\u0442\u043E \u0438\u043B\u0438... \u0447\u0442\u043E? \u041E\u0422\u041A\u0423\u0414\u0410
     \u0412\u041E\u041E\u0411\u0429\u0415 \u0412\u0417\u042F\u041B\u0410\u0421\u042C
-    \u0417\u0414\u0415\u0421\u042C \u0412\u041E\u0414\u0410?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.800049,\"yPos\":407.799744},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0427-\u0447\u0442\u043E
+    \u0417\u0414\u0415\u0421\u042C \u0412\u041E\u0414\u0410?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":205.500031,\"yPos\":407.799744},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0427-\u0447\u0442\u043E
     \u0437\u0430 \u0431\u0440\u0435... \u0422\u0430\u043A, c\u0442\u043E\u043F, \u0432\u043E\u0434\u0430
     \u043D\u0435 \u043E\u0431\u044B\u0447\u043D\u0430\u044F \u0432\u044B\u0445\u043E\u0434\u0438\u0442?
     \u041F\u043E\u0440\u0442\u0430\u043B\u044C\u043D\u0430\u044F... \u0442.\u0435.
     \u0435\u0441\u043B\u0438 \u044F \u043F\u0440\u044B\u0433\u043D\u0443 \u0432 \u043D\u0435\u0451,
     \u0442\u043E \u043E\u043A\u0430\u0436\u0443\u0441\u044C \u0432 \u043A\u0430\u043A\u043E\u043C-\u0442\u043E
-    \u0434\u0440\u0443\u0433\u043E\u043C \u043C\u0435\u0441\u0442\u0435?\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172.400024,\"yPos\":634.999756},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0421\u043F\u0430\u0441\u0438\u0431\u043E,
+    \u0434\u0440\u0443\u0433\u043E\u043C \u043C\u0435\u0441\u0442\u0435?\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":195.1,\"yPos\":634.999756},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0421\u043F\u0430\u0441\u0438\u0431\u043E,
     \u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u0430, \u0437\u0430 \u0441\u043E\u0432\u0435\u0442,
     \u043A\u043E\u043D\u0435\u0447\u043D\u043E, \u043D\u043E... \u0422\u044B \u0442\u0430\u043A
     \u0438 \u043E\u0441\u0442\u0430\u043D\u0435\u0448\u044C\u0441\u044F \u0442\u0443\u0442
     \u043F\u0430\u0440\u0438\u0442\u044C \u0432 \u0432\u043E\u0437\u0434\u0443\u0445\u0435?
     \u0417\u043D\u0430\u0435\u0448\u044C, \u0432\u043E\u043E\u0431\u0449\u0435...
     \u043C\u0435\u043D\u044F \u0432\u0441\u044F \u044D\u0442\u0430 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F
-    \u043D\u0430\u0441\u0442\u043E\u0440\u0430\u0436\u0438\u0432\u0430\u0435\u0442...\",\"parentUIDs\":[46],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":199.800018,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041D\u0415\u0427\u0422\u041E\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.800018,\"yPos\":280.799744},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443-\u0443-\u0443.
+    \u043D\u0430\u0441\u0442\u043E\u0440\u0430\u0436\u0438\u0432\u0430\u0435\u0442...\",\"parentUIDs\":[46],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":222.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041D\u0415\u0427\u0422\u041E\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.5,\"yPos\":280.799744},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443-\u0443-\u0443.
     \u0427\u0451 \u043E\u0440\u0451\u043C? \u041D\u043E\u0440\u043C\u0438\u043A \u0432\u0441\u0451,
     \u0442\u044B \u043F\u0440\u043E\u0441\u0442\u043E \u0432\u0435\u0437\u0443\u043D\u0447\u0438\u043A!
     \u041D\u0430\u0448\u0451\u043B \u0441... \u043F\u043E\u0440\u0442\u0430\u043B-\u0432\u043E\u0434\u0443
@@ -906,7 +906,7 @@ MonoBehaviour:
     \u0442\u0430\u043A \u0431\u044B \u0438 \u043D\u0430\u0437\u044B\u0432\u0430\u043B\u0441\u044F,
     \u0435\u0441\u043B\u0438 \u0431\u044B \u0431\u044B\u043B\u0430 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C
     \u0441\u043E\u0442\u0432\u043E\u0440\u0438\u0442\u044C \u0442\u0430\u043A\u043E\u0435,
-    \u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0436\u0435!\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041D\u0415\u0427\u0422\u041E\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178.800018,\"yPos\":523.1997},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
+    \u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0436\u0435!\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041D\u0415\u0427\u0422\u041E\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":201.5,\"yPos\":523.1997},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
     \u0434\u0430, \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E,
     \u043C\u0430\u043B\u044B\u0448. \u041D\u043E \u0442\u0443\u0442 \u0435\u0441\u0442\u044C
     \u043E\u0434\u0438\u043D \u043D\u044C\u044E\u0430\u043D\u0441. \u0422\u0430\u043C\u043E\u0448\u043D\u0438\u0435
@@ -924,7 +924,7 @@ MonoBehaviour:
     \u0432 \u0442\u0435\u0445 \u043C\u0438\u0440\u0430\u0445 \u044F \u0431\u044B
     \u043D\u0435 \u0441\u043E\u0432\u0435\u0442\u043E\u0432\u0430\u043B\u0430 \u043E\u0441\u0442\u0430\u0432\u0430\u0442\u044C\u0441\u044F,
     \u043A\u0442\u043E \u0437\u043D\u0430\u0435\u0442, \u0447\u0442\u043E \u043C\u043E\u0436\u0435\u0442
-    \u043F\u0440\u043E\u0438\u0437\u043E\u0439\u0442\u0438...\\n\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.400055,\"yPos\":743.999756},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443.
+    \u043F\u0440\u043E\u0438\u0437\u043E\u0439\u0442\u0438...\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212.100037,\"yPos\":744.999756},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443.
     \u0414\u0430 \u043D\u0435, \u043D\u0435 \u0431\u0435\u0440\u0438 \u0432 \u0433\u043E\u043B\u043E\u0432\u0443,
     \u043B\u0430\u043F\u043E\u0447\u043A\u0430, \u0432\u0441\u0451 \u0431\u0443\u0434\u0435\u0442
     \u043F\u0443\u0442\u0451\u043C. \u041F\u0443\u0441\u0442\u044C \u0442\u0432\u043E\u0439...
@@ -936,7 +936,7 @@ MonoBehaviour:
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  DefaultFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   NodeSerializedDataList:
   - {fileID: 1681282346}
   - {fileID: 1681282345}
@@ -954,8 +954,8 @@ MonoBehaviour:
   - {fileID: 1681282333}
   - {fileID: 1681282332}
   - {fileID: 1681282331}
-  ContinueFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  ContinueFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1352,7 +1352,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 46
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &197799642
@@ -1371,7 +1371,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 45
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &197799643
@@ -1390,7 +1390,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &197799644
@@ -1409,7 +1409,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 43
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &197799645
@@ -1599,7 +1599,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &197799655
@@ -3319,8 +3319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2.7000008}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -5.8499985}
+  m_SizeDelta: {x: 0, y: -6.299999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320204270
 MonoBehaviour:
@@ -3344,8 +3344,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:24
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  m_sharedMaterial: {fileID: -6318241824564722359, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  m_sharedMaterial: {fileID: 8978010341834086113, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3647,6 +3647,10 @@ PrefabInstance:
     - target: {fileID: 4704934626414402860, guid: 25157edd59cffa44495b7bb7a3225507, type: 3}
       propertyPath: m_Name
       value: Shovel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704934626414402860, guid: 25157edd59cffa44495b7bb7a3225507, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6162,8 +6166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 49
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206.800018,\"yPos\":144.59996},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.800049,\"yPos\":407.799866},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[44],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":199.800018,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
-    \u043F\u0440\u0438\u0448\u0451\u043B, \u0437\u0430 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u043E\u0439?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.000031,\"yPos\":270.399536},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041D\u0430
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215.5,\"yPos\":314.599976},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.500031,\"yPos\":577.799866},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[44],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":208.5,\"yPos\":192},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
+    \u043F\u0440\u0438\u0448\u0451\u043B, \u0437\u0430 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u043E\u0439?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206.700012,\"yPos\":440.399536},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041D\u0430
     \u0441\u0447\u0451\u0442 \u0431\u0438\u043E\u043B\u043E\u0433\u0438\u0438 \u044D\u0442\u0438\u0445
     \u0446\u0432\u0435\u0442\u043A\u043E\u0432. \u0412 \u0442\u0432\u043E\u0451\u043C
     \u043C\u0438\u0440\u0435 \u043E\u043D\u0438 \u0431\u044B\u0441\u0442\u0440\u043E
@@ -6174,7 +6178,7 @@ MonoBehaviour:
     \u0412\u0442\u043E\u0440\u0430\u044F \u0441\u0442\u0430\u0434\u0438\u044F - \u0446\u0432\u0435\u0442\u043E\u043A.
     \u041A\u0440\u0430\u0441\u0438\u0432 \u0432\u0441\u0435\u0433\u043E \u0434\u043D\u044F
     2 - \u0443\u0441\u043F\u0435\u0439 \u0441\u043E\u0431\u0440\u0430\u0442\u044C
-    \u0438 \u043F\u0440\u043E\u0434\u0430\u0442\u044C, \u043C\u044F\u0443!\\n\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178.800018,\"yPos\":523.1992},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422\u0440\u0435\u0442\u044C\u044F
+    \u0438 \u043F\u0440\u043E\u0434\u0430\u0442\u044C, \u043C\u044F\u0443!\\n\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189.5,\"yPos\":693.1992},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422\u0440\u0435\u0442\u044C\u044F
     \u0441\u0442\u0430\u0434\u0438\u044F - \u043B\u0443\u043A\u043E\u0432\u0438\u0446\u0430.
     \u0412 \u0442\u0430\u043A\u043E\u043C \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0438
     \u043E\u043D\u0430 \u043B\u0435\u0436\u0438\u0442 \u0432\u0441\u0435\u0433\u043E
@@ -6187,11 +6191,11 @@ MonoBehaviour:
     \u0435\u0441\u043B\u0438 \u043D\u0435 \u0443\u0441\u043F\u0435\u043B \u043D\u0430
     \u043F\u0440\u043E\u0448\u043B\u044B\u0445 \u0441\u0442\u0430\u0434\u0438\u044F\u0445
     \u0441\u0440\u0435\u0437\u0430\u0442\u044C \u0446\u0432\u0435\u0442\u043E\u043A
-    \u0438\u043B\u0438 \u0437\u0430\u0431\u0440\u0430\u0442\u044C \u043B\u0443\u043A\u043E\u0432\u043A\u0438.\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    \u0438\u043B\u0438 \u0437\u0430\u0431\u0440\u0430\u0442\u044C \u043B\u0443\u043A\u043E\u0432\u043A\u0438.\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  DefaultFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   NodeSerializedDataList:
   - {fileID: 197799654}
   - {fileID: 197799653}
@@ -6207,8 +6211,8 @@ MonoBehaviour:
   - {fileID: 197799643}
   - {fileID: 197799642}
   - {fileID: 197799641}
-  ContinueFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  ContinueFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -6566,7 +6570,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 56
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882252
@@ -6585,7 +6589,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 55
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882253
@@ -6604,7 +6608,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 54
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882254
@@ -6623,7 +6627,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 53
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882255
@@ -6642,7 +6646,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 52
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882256
@@ -6661,7 +6665,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 51
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882257
@@ -6680,7 +6684,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 50
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882258
@@ -6699,7 +6703,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 49
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882259
@@ -6718,7 +6722,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 46
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882260
@@ -6737,7 +6741,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 45
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882261
@@ -6756,7 +6760,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882262
@@ -6775,7 +6779,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 43
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882263
@@ -6965,7 +6969,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &833882273
@@ -9941,8 +9945,10 @@ GameObject:
   - component: {fileID: 1166841254}
   - component: {fileID: 1166841253}
   - component: {fileID: 1166841252}
-  - component: {fileID: 1166841251}
   - component: {fileID: 1166841250}
+  - component: {fileID: 1166841317}
+  - component: {fileID: 1166841318}
+  - component: {fileID: 1166841319}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -9981,26 +9987,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 46
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &1166841251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166841248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 45
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1166841252
@@ -10019,7 +10006,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1166841253
@@ -10038,7 +10025,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 43
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1166841254
@@ -10228,7 +10215,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1166841264
@@ -11238,6 +11225,63 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &1166841317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166841248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 50
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1166841318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166841248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 52
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1166841319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166841248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 53
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1001 &1168405794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11355,8 +11399,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  m_sharedMaterial: {fileID: -6318241824564722359, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  m_sharedMaterial: {fileID: 8978010341834086113, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12057,15 +12101,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2920789712904014231, guid: ce7c851558a4aeb48b945f5072c5cfdc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2920789712904014231, guid: ce7c851558a4aeb48b945f5072c5cfdc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2920789712904014231, guid: ce7c851558a4aeb48b945f5072c5cfdc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2920789712904014231, guid: ce7c851558a4aeb48b945f5072c5cfdc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12150,10 +12194,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u043A\u0430\u043F\u0438\u0442\u0430\u043B"
+  m_text: "\u041A\u0410\u041F\u0418\u0422\u0410\u041B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  m_sharedMaterial: {fileID: -6318241824564722359, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  m_sharedMaterial: {fileID: 8978010341834086113, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12611,7 +12655,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 52
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855132
@@ -12630,7 +12674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 51
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855133
@@ -12649,7 +12693,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 50
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855134
@@ -12668,7 +12712,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 49
-  TMPFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855135
@@ -12687,7 +12731,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 46
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855136
@@ -12706,7 +12750,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 45
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855137
@@ -12725,7 +12769,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855138
@@ -12744,7 +12788,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 43
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855139
@@ -12934,7 +12978,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1329855149
@@ -14548,14 +14592,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 49
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":93.20001,\"yPos\":275.800079},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422...
+  CurrentIDCounter: 54
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":220.5,\"yPos\":161.000061},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422...
     *\u0442\u0441\u0446* \u042F \u043E\u0431\u044B\u0447\u043D\u044B\u0439 \u0444\u0435\u0440\u043C\u0435\u0440,
     \u041B\u0435\u043F\u0435\u0441\u0442\u043E\u043A, \u043D\u0438\u043A\u0442\u043E
     \u043C\u0435\u043D\u044F \u043D\u0435 \u0437\u0430... \u041A\u0445\u043C, \u043B\u0430\u0434\u043D\u043E,
     c\u043E\u0433\u043B\u0430\u0441\u043D\u043E \u043D\u0430\u043A\u043B\u0430\u0434\u043D\u043E\u0439,
     \u0441\u0435\u0433\u043E\u0434\u043D\u044F \u0432\u044B \u0434\u043E\u043B\u0436\u043D\u044B
-    \u0431\u044B\u043B\u0438 \u043F\u0440\u0438\u0432\u0435\u0437\u0442\u0438...\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":89.20004,\"yPos\":524.599854},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0412\u043F\u043E\u043B\u043D\u0435
+    \u0431\u044B\u043B\u0438 \u043F\u0440\u0438\u0432\u0435\u0437\u0442\u0438...\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215,\"yPos\":381},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0412\u043F\u043E\u043B\u043D\u0435
     \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u0434\u043B\u044F
     \u0442\u043E\u0433\u043E, \u043A\u0442\u043E \u043A\u043E\u0433\u0434\u0430-\u0442\u043E
     \u0436\u0438\u043B \u0441 \u0435\u0449\u0451 \u043D\u0430\u0442\u0443\u0440\u0430\u043B\u044C\u043D\u043E\u0439
@@ -14566,28 +14610,27 @@ MonoBehaviour:
     \u043D\u0435\u0436\u0435\u043B\u0438 \u0432 \u0442\u043E\u043C \u043F\u0440\u043E\u043A\u043B\u044F\u0442\u043E\u043C
     \u0433\u043E\u0440\u043E\u0434\u0435. \u041B\u0430\u0434\u043D\u043E, \u0432\u0441\u0451
     \u0436\u0435 \u0431\u0435\u0437 \u044D\u0442\u043E\u0433\u043E AMID \u044F \u0431\u044B
-    \u0438 \u0442\u0443\u0442 \u043D\u0435 \u043E\u0441\u0432\u043E\u0438\u043B\u0441\u044F
-    ...\",\"parentUIDs\":[44],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":106.200012,\"yPos\":138.8},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C-\u0434\u0430-\u0430,
+    \u0438 \u0442\u0443\u0442 \u043D\u0435 \u043E\u0441\u0432\u043E\u0438\u043B\u0441\u044F...\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208,\"yPos\":598},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+    \",\"parentUIDs\":[46],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":222.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C-\u0434\u0430-\u0430,
     \u0434\u0430\u0432\u043D\u043E \u043D\u0435 \u0432\u0438\u0434\u0435\u043B \u0432
     \u044D\u0442\u0438\u0445 \u043A\u0440\u0430\u044F\u0445 \u0441 \u043D\u0435\u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E
     \u0436\u0430\u0440\u043A\u0438\u043C \u0441\u043E\u043B\u043D\u0446\u0435\u043C,
     \u0445\u043E\u0442\u044C \u043A\u043E\u0433\u043E-\u0442\u043E \u0440\u0430\u0437\u0443\u043C\u043D\u043E\u0433\u043E.
     \u041A\u0430\u043A \u043E\u0441\u0432\u043E\u0431\u043E\u0436\u0434\u0451\u043D\u043D\u044B\u0435
     \u0432\u043E\u043E\u0431\u0449\u0435 \u0432\u044B\u0436\u0438\u0432\u0430\u044E\u0442
-    \u0437\u0434\u0435\u0441\u044C?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0412\u041E\u0414\u0418\u0422\u0415\u041B\u042C\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":104.400024,\"yPos\":387.199738},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041E\u0439,
+    \u0437\u0434\u0435\u0441\u044C?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0412\u041E\u0414\u0418\u0422\u0415\u041B\u042C\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215.700012,\"yPos\":260.399719},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041E\u0439,
     \u043F\u0440\u043E\u0441\u0442\u0438\u0442\u0435! \u041D\u043E\u0432\u043E\u0441\u0442\u0438,
     \u0441\u0430\u043C\u0438 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0442\u0435,
     \u0434\u0430 \u0438 \u0447\u0451\u0442 \u043F\u0440\u0438\u043F\u0435\u043A\u043B\u043E,
-    \u0445\u0435-\u0445\u0435\u2026 \u041B\u0435\u043F\u0435\u0441\u0442\u043E\u043A?
+    \u0445\u0435-\u0445\u0435... \u041B\u0435\u043F\u0435\u0441\u0442\u043E\u043A?
     \u0425\u043C, \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E \u043D\u0435\u043E\u0431\u044B\u0447\u043D\u043E\u0435
     \u0438\u043C\u044F \u0434\u043B\u044F \u0444\u0435\u0440\u043C\u0435\u0440\u0430,
     \u0442\u0435\u043C \u0431\u043E\u043B\u0435\u0435 \u0434\u043B\u044F \u0442\u043E\u0433\u043E,
     \u043A\u0442\u043E \u0436\u0438\u0432\u0435\u0442 \u043F\u043E\u0441\u0440\u0435\u0434\u0438
     \u043A\u0430\u043A\u0442\u0443\u0441\u043E\u0432 \u0438 \u043F\u0435\u0441\u043A\u043E\u0432.
-    \u0417\u0432\u0443\u0447\u0438\u0442 \u0432\u043E\u043E\u0434\u0443\u0448\u0435\u0432\u043B\u044F\u044E\u0449\u0435.
     \u0427\u0442\u043E \u0436\u0435, \u0432\u0430\u0448\u0438 \u043A\u0443\u0441\u0442\u044B
-    \u0432 \u043C\u0430\u0448\u0438\u043D\u0435. \u041A\u0430\u043A \u0438 \u043F\u0440\u043E\u0441\u0438\u043B\u0438,
-    \u0441 \u043E\u0441\u043E\u0431\u044B\u043C\u0438 \u0434\u043E\u0431\u0430\u0432\u043A\u0430\u043C\u0438.\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0412\u041E\u0414\u0418\u0422\u0415\u041B\u042C\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":85.20001,\"yPos\":639.999268},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430
+    \u0432 \u043C\u0430\u0448\u0438\u043D\u0435. C \u043E\u0441\u043E\u0431\u044B\u043C\u0438
+    \u0434\u043E\u0431\u0430\u0432\u043E\u0447\u043A\u0430\u043C\u0438, \u043A\u0445\u043C...\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0412\u041E\u0414\u0418\u0422\u0415\u041B\u042C\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211.5,\"yPos\":480.19928},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430
     \u0447\u0442\u043E \u0412\u044B, \u0432\u044B\u0448\u0435 \u043D\u043E\u0441!
     \u0420\u0430\u0437 \u0443\u0436\u0435 \u043E\u0442\u0432\u0430\u0436\u0438\u043B\u0438\u0441\u044C
     \u0436\u0438\u0442\u044C \u0432 \u0442\u0430\u043A\u043E\u043C \u043C\u0435\u0441\u0442\u0435
@@ -14598,17 +14641,17 @@ MonoBehaviour:
     \u0436\u0435 \u0441\u0442\u0430\u0440\u0430\u043D\u0438\u044F\u043C\u0438. \u041D\u0430\u0434\u0435\u044E\u0441\u044C,
     \u0443 \u0412\u0430\u0441 \u0432 \u0446\u0432\u0435\u0442\u043E\u0447\u043D\u043E\u043C
     \u0434\u0435\u043B\u0435 \u0431\u0443\u0434\u0435\u0442 \u043F\u043E \u043B\u0443\u0447\u0448\u0435,
-    \u0447\u0435\u043C \u0441 \u0444\u0435\u0440\u043C\u0435\u0440\u0441\u0442\u0432\u043E\u043C,
-    \u043E\u0445, \u0447\u0451\u0442 \u0441\u043E\u043B\u043D\u0446\u0435  \u0441\u043E\u0432\u0441\u0435\u043C
-    \u0441\u0442\u0440\u0430\u0448\u043D\u043E\u0435\u2026 \u041F\u043E\u0442\u043E\u0440\u043E\u043F\u0438\u0442\u0435\u0441\u044C
+    \u0447\u0435\u043C \u0441 \u0444\u0435\u0440\u043C\u0435\u0440\u0441\u0442\u0432\u043E\u043C.\",\"parentUIDs\":[50],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0412\u041E\u0414\u0418\u0422\u0415\u041B\u042C\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":213,\"yPos\":675},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041E\u0445,
+    \u0447\u0451\u0442 \u0441\u043E\u043B\u043D\u0446\u0435  \u0441\u043E\u0432\u0441\u0435\u043C
+    \u0441\u0442\u0440\u0430\u0448\u043D\u043E\u0435... \u041F\u043E\u0442\u043E\u0440\u043E\u043F\u0438\u0442\u0435\u0441\u044C
     \u0437\u0430\u0431\u0440\u0430\u0442\u044C \u0438 \u0432\u044B\u0441\u0430\u0434\u0438\u0442\u044C
     \u0432\u0441\u0435 \u043A\u0443\u0441\u0442\u044B \u0438\u0437 \u043C\u043E\u0440\u043E\u0437\u0438\u043B\u043A\u0438
     \u043A\u0443\u0437\u043E\u0432\u0430, \u043F\u043E\u043A\u0430 \u0441\u043E\u043B\u043D\u0446\u0435
-    \u0435\u0449\u0451 \u043D\u0435 \u0432 \u0437\u0435\u043D\u0438\u0442\u0435!\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0412\u041E\u0414\u0418\u0422\u0415\u041B\u042C\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    \u0435\u0449\u0451 \u043D\u0435 \u0432 \u0437\u0435\u043D\u0438\u0442\u0435!\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0412\u041E\u0414\u0418\u0422\u0415\u041B\u042C\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  DefaultFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   NodeSerializedDataList:
   - {fileID: 1166841263}
   - {fileID: 1166841262}
@@ -14622,10 +14665,12 @@ MonoBehaviour:
   - {fileID: 1166841254}
   - {fileID: 1166841253}
   - {fileID: 1166841252}
-  - {fileID: 1166841251}
   - {fileID: 1166841250}
-  ContinueFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  - {fileID: 1166841317}
+  - {fileID: 1166841318}
+  - {fileID: 1166841319}
+  ContinueFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -14675,12 +14720,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 57
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":146.799988,\"yPos\":-716.9999},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":122.800018,\"yPos\":-453.800354},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":148.799957,\"yPos\":-206.599762},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.399963,\"yPos\":12.6002808},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[50],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":139.799988,\"yPos\":-839.5996},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208.5,\"yPos\":-223.400269},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.500031,\"yPos\":39.7992554},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.499969,\"yPos\":286.999878},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":204.099976,\"yPos\":506.1999},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[50],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":201.5,\"yPos\":-346},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
     \u043F\u0440\u0438\u0448\u0451\u043B, \u0437\u0430 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u043E\u0439?
-    \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":138,\"yPos\":-591.2003},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u043C
+    \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":200.700012,\"yPos\":-98.60071},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u043C
     \u043F\u0440\u043E \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0435
     \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435
-    \u043C\u044F\u0443\u0432\u0440\u0435\u043C\u0435\u043D\u0438... \u0432\u0440\u0435\u043C\u0435\u043D\u0438!\_\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":118.799988,\"yPos\":-338.400757},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041F\u0435\u0440\u0432\u044B\u0439
+    \u043C\u044F\u0443\u0432\u0440\u0435\u043C\u0435\u043D\u0438... \u0432\u0440\u0435\u043C\u0435\u043D\u0438!\_\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180.5,\"yPos\":155.198853},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041F\u0435\u0440\u0432\u044B\u0439
     \u0432\u0430\u0440\u0438\u0430\u043D\u0442 - \u044D\u0442\u043E \u0437\u0430\u043A\u0430\u0437
     \u0443 AMID \u0443\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u0439. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
     \u0438\u0445 \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u0441\u0442\u0430\u0434\u0438\u0438
@@ -14689,23 +14734,23 @@ MonoBehaviour:
     \u043B\u0443\u0447\u0448\u0443\u044E \u0443\u0440\u043E\u0436\u0430\u0439\u043D\u043E\u0441\u0442\u044C
     \u043B\u0443\u043A\u043E\u0432\u0438\u0447\u0435\u043A, \u043D\u0435 \u043D\u0443\u0436\u043D\u043E
     \u0431\u0443\u0434\u0435\u0442 \u0436\u0434\u0430\u0442\u044C\_ \u043B\u0443\u043A\u043E\u0432\u0438\u0446
-    \u0441 \u0434\u0440\u0443\u0433\u0438\u0445 \u043A\u043B\u0443\u043C\u0431!\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":171.999969,\"yPos\":-121.599792},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0412\u0442\u043E\u0440\u043E\u0439
+    \u0441 \u0434\u0440\u0443\u0433\u0438\u0445 \u043A\u043B\u0443\u043C\u0431!\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":233.699982,\"yPos\":371.999817},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0412\u0442\u043E\u0440\u043E\u0439
     \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u0438\u043A - \u043F\u0440\u043E\u0441\u0442\u043E
     \u0437\u0430 \u043C\u044F\u0443\u0447\u0438\u043B\u043B\u0441\u044F \u043D\u0430
     \u0441\u0432\u043E\u0435\u0439 \u043B\u0430\u0432\u043E\u0447\u043A\u0435, \u043F\u0440\u043E\u043F\u0443\u0441\u0442\u0438
     \u0447\u0430\u0441\u043E\u043A-\u0434\u0440\u0443\u0433\u043E\u0439 - \u043C\u043E\u0436\u0435\u0442
-    \u0447\u0442\u043E-\u0442\u043E \u0434\u0430 \u043F\u043E\u0434\u0440\u0430\u0441\u0442\u0451\u0442.\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":183.999969,\"yPos\":107.200378},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422\u0440\u0435\u0442\u0438\u0439
+    \u0447\u0442\u043E-\u0442\u043E \u0434\u0430 \u043F\u043E\u0434\u0440\u0430\u0441\u0442\u0451\u0442.\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":245.699982,\"yPos\":600.800049},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0422\u0440\u0435\u0442\u0438\u0439
     \u0432\u0430\u0440\u0438\u0430\u043D\u0442 - \u0441\u043F\u0430\u0442\u044C \u043A\u043E\u043D\u0435\u0447\u043D\u043E
     \u0436\u0435! \u0423 \u0442\u0435\u0431\u044F \u0435\u0441\u0442\u044C \u043A\u0440\u043E\u0432\u0430\u0442\u044C
     \u0432\u0435\u0440\u043D\u043E?\_ \u041B\u043E\u0436\u0438\u0441\u044C \u0441\u043F\u0430\u0442\u044C
     \u0432\u043E \u0432\u0440\u0435\u043C\u044F, \u043D\u043E\u0447\u043A\u043E\u0439,
     \u0430 \u0442\u043E \u043F\u0440\u043E\u0441\u043F\u0438\u0448\u044C \u0437\u0430
     \u0434\u0435\u043D\u044C \u0432\u0435\u0441\u044C \u0443\u0440\u043E\u0436\u0430\u0439,
-    \u043C\u044F\u0443!\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    \u043C\u044F\u0443!\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  DefaultFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   NodeSerializedDataList:
   - {fileID: 1329855148}
   - {fileID: 1329855147}
@@ -14725,8 +14770,8 @@ MonoBehaviour:
   - {fileID: 1329855133}
   - {fileID: 1329855132}
   - {fileID: 1329855131}
-  ContinueFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  ContinueFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -15076,6 +15121,10 @@ PrefabInstance:
       propertyPath: _speed
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: -8721284915678409584, guid: ec4cb08639216534b8785d2e3afed2b2, type: 3}
+      propertyPath: _blackCanvas
+      value: 
+      objectReference: {fileID: 688759987}
     - target: {fileID: -8721284915678409584, guid: ec4cb08639216534b8785d2e3afed2b2, type: 3}
       propertyPath: _worldGenerator
       value: 
@@ -15758,17 +15807,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 57
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206.800018,\"yPos\":144.599854},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.800049,\"yPos\":407.7998},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208.799988,\"yPos\":655.000061},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":202.4,\"yPos\":874.2},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[50],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.4,\"yPos\":1091.79993},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[52],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452.000061,\"yPos\":905.399963},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[54],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":199.800018,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215.5,\"yPos\":-308.400146},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.500031,\"yPos\":-45.2001953},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":217.499969,\"yPos\":202.000061},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211.099976,\"yPos\":421.2},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[50],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":207.099976,\"yPos\":638.7999},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[52],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":460.700073,\"yPos\":452.3999},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0414\u0430\u043B\u0435\u0435\",\"parentUIDs\":[54],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WasCorrectSelected\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":208.5,\"yPos\":-431},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443,
     \u043F\u0440\u0438\u0448\u0451\u043B, \u0437\u0430 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u043E\u0439?
-    \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.000031,\"yPos\":270.3995},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443\u043C\u0435\u043D\u0442\u044B,
+    \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206.700012,\"yPos\":-182.6005},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041C\u044F\u0443\u043C\u0435\u043D\u0442\u044B,
     \u043A\u0445\u0435, \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u044B!
     \u0423 \u0442\u0435\u0431\u044F \u0435\u0441\u0442\u044C \u043B\u043E\u043F\u0430\u0442\u0430,
     \u0441\u0435\u043A\u0430\u0442\u043E\u0440, \u043B\u0435\u0439\u043A\u0430 \u0438
-    \u0442\u0432\u043E\u0438 \u043B\u0430\u043F\u043A\u0438.\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178.800018,\"yPos\":523.1992},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u043E\u043F\u0430\u0442\u0430
+    \u0442\u0432\u043E\u0438 \u043B\u0430\u043F\u043A\u0438.\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.5,\"yPos\":70.19922},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u043E\u043F\u0430\u0442\u0430
     \u0441 \u043B\u0451\u0433\u043A\u043E\u0441\u0442\u044C\u044E \u0443\u0431\u0438\u0440\u0430\u0435\u0442
-    \u043A\u043E\u043C\u043F\u043E\u0441\u0442 \u0441 \u043A\u043B\u0443\u043C\u0431\u044B.\\n\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":232,\"yPos\":740.0001},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u043E\u043F\u0430\u0442\u0430
+    \u043A\u043E\u043C\u043F\u043E\u0441\u0442 \u0441 \u043A\u043B\u0443\u043C\u0431\u044B.\\n\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":240.699982,\"yPos\":287.000122},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u043E\u043F\u0430\u0442\u0430
     \u0441 \u043B\u0451\u0433\u043A\u043E\u0441\u0442\u044C\u044E \u0443\u0431\u0438\u0440\u0430\u0435\u0442
-    \u043A\u043E\u043C\u043F\u043E\u0441\u0442 \u0441 \u043A\u043B\u0443\u043C\u0431\u044B.\\n\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":244,\"yPos\":968.7999},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0421\u0442\u0435\u0431\u043B\u0438
+    \u043A\u043E\u043C\u043F\u043E\u0441\u0442 \u0441 \u043A\u043B\u0443\u043C\u0431\u044B.\\n\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":253.699982,\"yPos\":516.7999},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0421\u0442\u0435\u0431\u043B\u0438
     \u044D\u0442\u0438\u0445 \u0446\u0432\u0435\u0442\u043E\u0432, \u0435\u0441\u043B\u0438
     \u0440\u0430\u0441\u0442\u0443\u0442 \u0432 \u043E\u0431\u044B\u0447\u043D\u043E\u043C
     \u043C\u0438\u0440\u0435, \u043E\u0447\u0435\u043D\u044C \u043F\u043B\u043E\u0442\u043D\u044B\u0435,
@@ -15776,12 +15825,12 @@ MonoBehaviour:
     \u0446\u0432\u0435\u0442\u044B \u0438 \u043F\u0440\u043E\u0434\u0430\u0442\u044C
     \u0438\u0445 - \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 \u0441\u0432\u043E\u0439
     \u0441\u0435\u043A\u0430\u0442\u043E\u0440, \u043B\u0430\u043F\u043A\u0438 \u043D\u0435
-    \u043F\u043E\u043C\u043E\u0433\u0443\u0442, \u043C\u044F\u0443!\\n\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":461.600037,\"yPos\":1037.59985},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u0435\u0439\u043A\u0430
+    \u043F\u043E\u043C\u043E\u0433\u0443\u0442, \u043C\u044F\u0443!\\n\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471.300049,\"yPos\":584.599854},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041B\u0435\u0439\u043A\u0430
     \u043F\u043E\u043B\u0438\u0432\u0430\u0435\u0442 \u0446\u0432\u0435\u0442\u043E\u0447\u043A\u0438
     \u0432 \u043A\u043B\u0443\u043C\u0431\u0430\u0445, \u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
     \u0432\u0441\u0435\u0433\u043E 3, \u0446\u0432\u0435\u0442\u044B \u0438\u0437
     \u0430\u043B\u044C\u0442-\u043C\u0438\u0440\u0430 \u043E\u0447\u0435\u043D\u044C
-    \u043F\u0440\u043E\u0436\u043E\u0440\u043B\u0438\u0432\u044B, \u043C\u044F\u0443-\u0443.\_\\n\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":473.600037,\"yPos\":807.999939},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041E\u0434\u043D\u0430\u043A\u043E
+    \u043F\u0440\u043E\u0436\u043E\u0440\u043B\u0438\u0432\u044B, \u043C\u044F\u0443-\u0443.\_\\n\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":482.300049,\"yPos\":354.999939},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u041E\u0434\u043D\u0430\u043A\u043E
     \u0442\u0432\u043E\u0438 \u043B\u0430\u043F\u043A\u0438 \u0432\u043F\u043E\u043B\u043D\u0435
     \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u044B \u0441\u0440\u044B\u0432\u0430\u0442\u044C
     \u044D\u0442\u0438 \u043F\u0440\u0438\u0447\u0443\u0434\u043B\u0438\u0432\u044B\u0435
@@ -15790,11 +15839,11 @@ MonoBehaviour:
     \u0423 \u0440\u0430\u0437\u043D\u044B\u0445 \u0446\u0432\u0435\u0442\u043E\u0432
     \u0438\u0445 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u0440\u0430\u0437\u043D\u043E\u0435
     \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E. \u0422\u0430\u043A\u043E\u0432\u0430
-    \u043C\u0430\u0442\u044C-\u043F\u0440\u0438\u0440\u043E\u0434\u0430, \u043C\u044F\u0443-\u0443-\u0443!\",\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u043E\u0442\u043E\u043C\u0435\u0434\u0443\u0437\u043A\u0430\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    \u043C\u0430\u0442\u044C-\u043F\u0440\u0438\u0440\u043E\u0434\u0430, \u043C\u044F\u0443-\u0443-\u0443!\",\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u041A\u041E\u0422\u041E\u041C\u0415\u0414\u0423\u0417\u041A\u0410\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  DefaultFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   NodeSerializedDataList:
   - {fileID: 833882272}
   - {fileID: 833882271}
@@ -15818,8 +15867,8 @@ MonoBehaviour:
   - {fileID: 833882253}
   - {fileID: 833882252}
   - {fileID: 833882251}
-  ContinueFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  ContinueFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -15884,11 +15933,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17079a923dc343b4399c3b0255589562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 2, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
+  _messageDamping: {x: 0, y: 1.5, z: 0}
+  _isActive: 0
+  _fixPos: 0
   NPCConversation: {fileID: 157161028}
   PRs:
   - {fileID: 778943427}
@@ -16516,7 +16564,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 48
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1681282332
@@ -16535,7 +16583,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 47
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1681282333
@@ -16554,7 +16602,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 46
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1681282334
@@ -16573,7 +16621,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 45
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1681282335
@@ -16592,7 +16640,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1681282336
@@ -16611,7 +16659,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 43
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1681282337
@@ -16801,7 +16849,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1681282347
@@ -18297,6 +18345,7 @@ MonoBehaviour:
   _atrtree: {fileID: 8951715163956382870, guid: a5aac4e8a738b0b4c90b1d03daa4d058, type: 3}
   _offsetInHand: {x: -0.608, y: -0.097, z: -0.327}
   _rotateInHand: {x: 0.23573819, y: -0.20051754, z: -0.9096568, w: 0.27702796}
+  _cat: {fileID: 1590827343}
   ConversationManager: {fileID: 862373908}
   FadeDuration: 5
   CanvasGroup: {fileID: 688759987}
@@ -20636,8 +20685,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 10
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a4d6a65c44b24544884c722395adc789, type: 2}
-  m_sharedMaterial: {fileID: -6318241824564722359, guid: a4d6a65c44b24544884c722395adc789, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
+  m_sharedMaterial: {fileID: 8978010341834086113, guid: e4b061bb86e5dfb4998498304b7350e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -1,13 +1,15 @@
-using Assets.Scripts.Equipment;
-using Cinemachine;
-using DialogueEditor;
-using StarterAssets;
+using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
+
+using Assets.Scripts.Equipment;
+
+using Cinemachine;
+
+using DialogueEditor;
+
+using StarterAssets;
+
 using UnityEngine;
-using UnityEngine.Windows;
 
 public class StartScene : MonoBehaviour
 {
@@ -50,6 +52,8 @@ public class StartScene : MonoBehaviour
     [SerializeField] private Vector3 _offsetInHand;
     [SerializeField] private Quaternion _rotateInHand;
 
+    [SerializeField] private CatAbobusController _cat;
+
     public ConversationManager ConversationManager;
     public float FadeDuration = 1f; // ѕродолжительность анимации фейда в секундах Private CanvasGroup CanvasGroup;
     public CanvasGroup CanvasGroup;
@@ -67,7 +71,7 @@ public class StartScene : MonoBehaviour
     }
     private void Update()
     {
-        if(_actNumber == 0 && !_personController.HasMovePoint)
+        if (_actNumber == 0 && !_personController.HasMovePoint)
         {
             ThirdPersonController.Instance.playerInput.enabled = false;
             //_personController.StopPerson();
@@ -81,7 +85,7 @@ public class StartScene : MonoBehaviour
             StartCoroutine(Act1Corr(1f, 0f));
             _actNumber++;
         }
-        else if(_actNumber == 1 && !_personController.HasMovePoint)
+        else if (_actNumber == 1 && !_personController.HasMovePoint)
         {
             _inputs.MoveInput(_act2Move);
             _personController.MoveToPoint(_act2Pos.transform.position, p =>
@@ -94,16 +98,12 @@ public class StartScene : MonoBehaviour
             //_personController.StopPerson();
             //ConversationManager.StartConversation(_act2Dialog);
         }
-        else if(_actNumber == 3)
+        else if (_actNumber == 3)
         {
             _personController._camZoom = false;
             StartCoroutine(Act3CamDistance());
             _inputs.MoveInput(_act3Move);
-            _personController.MoveToPoint(_act3Pos.transform.position, p =>
-            {
-                Debug.Log(p.x);
-                return p.x >= 0;
-            });
+            _personController.MoveToPoint(_act3Pos.transform.position, p => { return p.x >= 0; });
             _actNumber++;
         }
         else if (_actNumber == 4 && !_personController.HasMovePoint)
@@ -133,7 +133,7 @@ public class StartScene : MonoBehaviour
             //_personController.StopPerson();
             //ConversationManager.StartConversation(_act2Dialog);
         }
-        else if(_actNumber == 6 && !_personController.HasMovePoint)
+        else if (_actNumber == 6 && !_personController.HasMovePoint)
         {
             _act5Shovel.Pickup();
 
@@ -173,16 +173,12 @@ public class StartScene : MonoBehaviour
             ff = Instantiate(_atrtree);
             ff.transform.SetParent(_personController.Hand.transform, false);
             ff.transform.SetLocalPositionAndRotation(_offsetInHand, _rotateInHand);
-            //-0.608 -0.097 -0.327 -13.544 -33.74 -142
-            _personController.MoveToPoint(_act6Pos.transform.position, p =>
-            {
-                Debug.Log(p.x);
-                return p.x >= 0;
-            });
+
+            _personController.MoveToPoint(_act6Pos.transform.position, p => { return p.x >= 0; });
 
             _actNumber++;
         }
-        else if(_actNumber == 10 && !_personController.HasMovePoint)
+        else if (_actNumber == 10 && !_personController.HasMovePoint)
         {
             ff.SetActive(false);
             _personController._camZoom = true;
@@ -199,7 +195,12 @@ public class StartScene : MonoBehaviour
         else if (_actNumber == 12)
         {
             _animator.SetBool(Animator.StringToHash("StartAnim"), true);
-
+            StartCoroutine(Wait(5));
+        }
+        else if (_actNumber == 13)
+        {
+            _cat.Talk();
+            _actNumber++;
         }
     }
 
@@ -252,12 +253,22 @@ public class StartScene : MonoBehaviour
 
     private IEnumerator Act3CamDistance()
     {
-        
+
         while (_transposer.m_CameraDistance < _act3CamDistance)
         {
             _transposer.m_CameraDistance += _act3CamSpeed * Time.deltaTime;
             yield return null;
         }
+    }
+
+    private IEnumerator Wait(float minutes)
+    {
+        DateTime time = DayAndNightControl.Now;
+        while ((DayAndNightControl.Now - time).TotalMinutes < minutes)
+            yield return null;
+
+        _actNumber++;
+        yield return null;
     }
 
 }

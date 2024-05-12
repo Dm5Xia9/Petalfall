@@ -11,12 +11,12 @@ namespace Assets.Scripts.Equipment
         public override int? Counter => _count;
         protected override bool IsOver => _count <= 0;
 
+        public override string Message => "Удобрение";
+
         public void Init(int count = 1)
         {
             _count = count;
         }
-
-        public override string Message => "Удобрение";
 
         public override void Use(GameObject gameObject)
         {

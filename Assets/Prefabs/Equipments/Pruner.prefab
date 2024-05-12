@@ -47,11 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6874bc2fe555bb45830c43595c236c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
+  _messageDamping: {x: 0, y: 0.5, z: 0}
+  _isActive: 0
   _offsetInHand: {x: 0.09, y: 0.12, z: -0.08}
   _rotateInHand: {x: 0.3861258, y: -0.33818418, z: -0.5547088, w: 0.6548561}
 --- !u!65 &3677111618603756524

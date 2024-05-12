@@ -11,11 +11,13 @@ namespace Assets.Scripts.WorldDevice
     {
         [SerializeField] private int _skippedMinutes;
         [SerializeField] private float _speed;
+
         public override string Message => "Отдохнуть";
 
         protected override void OnActive()
         {
             StartCoroutine(Timer());
+            base.OnActive();
         }
 
         private IEnumerator Timer()

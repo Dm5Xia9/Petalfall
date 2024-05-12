@@ -17,20 +17,27 @@ public class CatAbobusController : ActivationEvent
     private bool _abobusDialog;
 
     public override bool TriggerEnable => _abobusDialog == false;
+    public override string Message => "Говорить";
 
     private void Awake()
     {
         ConversationManager.OnConversationEnded += () =>
         {
-            _person.enabled = true;
+            Person.enabled = true;
             _abobusDialog = false;
             //isFirst = false;
         };
     }
+
+    public void Talk()
+    {
+        OnActive();
+    }
+
     protected override void OnActive()
     {
         //Player.isActiveAndEnabled = false;
-        _person.enabled = false;
+        Person.enabled = false;
         _abobusDialog = true;
         if (isFirst == true)
         {

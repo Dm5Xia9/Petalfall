@@ -12,14 +12,14 @@ namespace Assets.Scripts.WorldDevice
         [SerializeField] private int _fertilizerCount;
 
         [SerializeField] private GameObject _startRoadPos;
-        public override string Message => "Взять удобрения";
         [SerializeField] private GameObject _centerRoadPos;
         [SerializeField] private GameObject _endRoadPos;
         [SerializeField] private float _carSpeed;
 
         private bool _isHere = true;
 
-        public override bool TriggerEnable => _person.InHandObject == null && _fertilizerCount > 0;
+        public override bool TriggerEnable => Person.InHandObject == null && _fertilizerCount > 0;
+        public override string Message => "Взять удобрения";
 
         protected override void ProtectedUpdate()
         {
@@ -40,6 +40,7 @@ namespace Assets.Scripts.WorldDevice
             _fertilizerCount--;
 
             StartCoroutine(CreateFertilizer());
+            base.OnActive();
         }
 
         public void AddFertilizer()

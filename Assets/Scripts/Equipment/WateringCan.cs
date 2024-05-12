@@ -10,6 +10,7 @@ namespace Assets.Scripts.Equipment
         [SerializeField] private int _waterCapacity;
 
         public override int? Counter => _waterCount;
+
         public override string Message => "Лейка";
 
         public override void Use(GameObject gameObject)

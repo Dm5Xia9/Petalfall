@@ -17,7 +17,9 @@ namespace Assets.Scripts.Flowers
 
         private int _seed;
 
-        public override bool TriggerEnable => _person.InHandObject == null;
+        public override bool TriggerEnable => Person.InHandObject == null;
+        public override string Message => "Собрать";
+
 
         protected override void ProtectedStart()
         {

@@ -46,13 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a91ab8f736d32c44807e6503d093b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
+  _messageDamping: {x: 0, y: 2, z: 0}
+  _isActive: 0
   _startUsingTime: 7
   _endUsingTime: 19
+  _fertilizerSource: {fileID: 0}
 --- !u!65 &6066734371716279129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -159,13 +158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a91ab8f736d32c44807e6503d093b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messagePrefab: {fileID: 0}
+  _messageDamping: {x: 0, y: 0, z: 0}
+  _isActive: 0
   _startUsingTime: 0
   _endUsingTime: 0
+  _fertilizerSource: {fileID: 0}
 --- !u!65 &5840858988642134800
 BoxCollider:
   m_ObjectHideFlags: 0

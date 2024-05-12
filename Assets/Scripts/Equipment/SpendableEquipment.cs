@@ -21,7 +21,7 @@ namespace Assets.Scripts.Equipment
             Drop();
             yield return null;
 
-            _person.InHandObject = null;
+            Person.InHandObject = null;
             Destroy(gameObject);
             yield return null;
         }

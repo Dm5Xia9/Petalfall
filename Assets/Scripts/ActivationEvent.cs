@@ -1,18 +1,26 @@
+using System;
+
 using StarterAssets;
-using TMPro;
+
 using UnityEngine;
 
 public class ActivationEvent : MonoBehaviour
 {
-    public GameObject MessagePrefab;
-    public Vector3 MessageDamping;
-    public float Radius;
-    public float Distance;
-    private GameObject MessageObject;
-    private BackAndForthAnimation BackAndForthAnimation;
-    public bool IsActive = false;
+    [SerializeField] private GameObject _messagePrefab;
+    [SerializeField] private Vector3 _messageDamping;
+    [SerializeField] private bool _isActive = false;
+
+    [SerializeField] private bool _fixPos = true;
+
+    private static readonly float _cooldown = 0.1f;
+    private static DateTime _lastUsed;
+
+    private GameObject _messageObject;
+    private BackAndForthAnimation _backAndForthAnimation;
+
+    protected ThirdPersonController Person => ThirdPersonController.Instance;
+
     public virtual bool TriggerEnable => true;
-    protected ThirdPersonController _person => ThirdPersonController.Instance;
     public virtual string Message => "";
 
     private void Start()
@@ -22,12 +30,12 @@ public class ActivationEvent : MonoBehaviour
 
     protected virtual void ProtectedStart()
     {
-        MessageObject = Instantiate(MessagePrefab, transform.position + MessageDamping, Quaternion.identity);
-        MessageObject.GetComponent<Canvas>().worldCamera = Camera.main;
-        MessageObject.transform.SetParent(transform);
-        MessageObject.SetActive(false);
-        BackAndForthAnimation = MessageObject.GetComponent<BackAndForthAnimation>();
-        var txt = MessageObject.GetComponent<ActivationVariables>();
+        _messageObject = Instantiate(_messagePrefab, transform.position + _messageDamping, Quaternion.identity, transform);
+        _messageObject.GetComponent<Canvas>().worldCamera = Camera.main;
+        _messageObject.SetActive(false);
+
+        _backAndForthAnimation = _messageObject.GetComponent<BackAndForthAnimation>();
+        ActivationVariables txt = _messageObject.GetComponent<ActivationVariables>();
         txt.Text.text = $"{Message}";
     }
 
@@ -41,12 +49,17 @@ public class ActivationEvent : MonoBehaviour
         if (TriggerEnable is false)
             return;
 
-        if (_person.playerInput.enabled == false)
+        if (Person.playerInput.enabled == false)
             return;
 
-        if (IsActive)
+        if ((DayAndNightControl.Now - _lastUsed).TotalSeconds < _cooldown)
+            return;
+
+        if (_isActive)
         {
-            // ���������, ���� �� ������ �� ������� "E"
+            if (_fixPos == true)
+                _messageObject.transform.SetPositionAndRotation(transform.position + _messageDamping, Quaternion.Inverse(transform.rotation));
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 OnActive();
@@ -56,36 +69,36 @@ public class ActivationEvent : MonoBehaviour
 
     protected virtual void OnActive()
     {
-        //DayAndNightControl.Instance.SkipMinutes(15);
-        //Debug.Log("����� �����");
-
+        _lastUsed = DayAndNightControl.Now;
+        if (TriggerEnable is false)
+            NotActive();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "TriggerArea" && _person.playerInput.enabled == true)
+        if (other.gameObject.name == "TriggerArea" && Person.playerInput.enabled == true)
         {
             TriggerArea triggerArea = other.gameObject.GetComponent<TriggerArea>();
-            triggerArea.events.Add(this);
+            triggerArea.AddActivationEvent(this);
             triggerArea.Toggle();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "TriggerArea" && _person.playerInput.enabled == true)
+        if (other.gameObject.name == "TriggerArea" && Person.playerInput.enabled == true)
         {
             TriggerArea triggerArea = other.gameObject.GetComponent<TriggerArea>();
-            triggerArea.events.Remove(this);
+            triggerArea.RemoveActivationEvent(this);
             triggerArea.Toggle();
         }
     }
 
     public void NotActive()
     {
-        IsActive = false;
+        _isActive = false;
 
-        MessageObject.SetActive(false);
+        _messageObject.SetActive(false);
     }
 
     public void Active()
@@ -93,9 +106,9 @@ public class ActivationEvent : MonoBehaviour
         if (TriggerEnable is false)
             return;
 
-        IsActive = true;
-        MessageObject.SetActive(true);
-        BackAndForthAnimation.Restart();
+        _isActive = true;
+        _messageObject.SetActive(true);
+        _backAndForthAnimation.Restart();
     }
 
 

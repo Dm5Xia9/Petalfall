@@ -81,8 +81,9 @@ namespace Assets.Scripts.WorldDevice
             { FlowerbedStage.Compost, equipment => equipment is Shovel }
         };
 
-        public override bool TriggerEnable => base.TriggerEnable & AvailableTools[_flowerStage](_person.InHandObject);
         public float WaterCapacity => 1.0f - (float)(DayAndNightControl.Now - _lastWatering).TotalHours / _wateringPeriod;
+
+        public override bool TriggerEnable => base.TriggerEnable & AvailableTools[_flowerStage](Person.InHandObject);
         public override string Message => "Использовать";
 
         protected override void ProtectedUpdate()
@@ -112,9 +113,9 @@ namespace Assets.Scripts.WorldDevice
 
         protected override void OnActive()
         {
-            if (_person.InHandObject != null)
+            if (Person.InHandObject != null)
             {
-                _person.InHandObject.Use(gameObject);
+                Person.InHandObject.Use(gameObject);
             }
             else
             {
@@ -122,6 +123,7 @@ namespace Assets.Scripts.WorldDevice
                 Collect();
                 StartCoroutine(CreateSeeds(seedsCount));
             }
+            base.OnActive();
         }
 
         public void Watering()

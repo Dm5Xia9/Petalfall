@@ -17,6 +17,9 @@ namespace Assets.Scripts.Flowers
 
         public float LightPowerBud;
 
+        public static readonly float MaxStemLength = 6;
+        public static readonly float MaxLeafCount = 12;
+
         public FlowerParameters(Color[] budColors, int stemType, int budType, int stemLength, int leafCount, float branchCount, float lightPowerBud)
         {
             BudColors = budColors;
@@ -63,11 +66,11 @@ namespace Assets.Scripts.Flowers
             while (Random.value < 0.5f);
 
             int stemLength = 1;
-            while (Random.value < 0.6f)
+            while (Random.value < 0.6f && stemLength <= MaxStemLength)
                 stemLength++;
 
             int leafCount = 1;
-            while (Random.value < 0.4f)
+            while (Random.value < 0.7f && leafCount <= MaxLeafCount)
                 leafCount++;
 
             return new FlowerParameters(budColors.ToArray(), 0, Random.Range(0, 2), stemLength, leafCount, 2 * Mathf.Pow(Random.value, 2), 0.0f);

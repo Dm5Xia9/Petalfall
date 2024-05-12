@@ -14,7 +14,7 @@ namespace Assets.Scripts.Equipment
         private bool _isPickup;
         private Transform _initParent;
 
-        public override bool TriggerEnable => _isPickup == false;
+        public override bool TriggerEnable => _isPickup == false && Person.playerInput.enabled == true;
         public virtual int? Counter => null;
 
         protected override void ProtectedStart()
@@ -27,17 +27,18 @@ namespace Assets.Scripts.Equipment
         protected override void OnActive()
         {
             //StartCoroutine(PickupCoroutine());
-            if (_person.InHandObject != null)
-                _person.InHandObject.Drop();
+            if (Person.InHandObject != null)
+                Person.InHandObject.Drop();
             Pickup();
+            base.OnActive();
         }
 
         public virtual void Use(GameObject gameObject) { }
 
         public void Pickup()
         {
-            _person.InHandObject = this;
-            transform.SetParent(_person.Hand.transform, false);
+            Person.InHandObject = this;
+            transform.SetParent(Person.Hand.transform, false);
             transform.SetLocalPositionAndRotation(_offsetInHand, _rotateInHand);
 
             _rigidBody.isKinematic = true;
@@ -47,7 +48,7 @@ namespace Assets.Scripts.Equipment
 
         public void Drop()
         {
-            _person.InHandObject = null;
+            Person.InHandObject = null;
             transform.SetParent(_initParent, true);
 
             _rigidBody.isKinematic = false;
@@ -57,8 +58,8 @@ namespace Assets.Scripts.Equipment
 
         private IEnumerator PickupCoroutine()
         {
-            if (_person.InHandObject != null)
-                _person.InHandObject.Drop();
+            if (Person.InHandObject != null)
+                Person.InHandObject.Drop();
             yield return null;
 
             Pickup();
