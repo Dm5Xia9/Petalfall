@@ -18,6 +18,9 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+        public GameObject EntityPlaceholder;
+        public TriggerArea TriggerArea;
+
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -117,7 +120,7 @@ namespace StarterAssets
         private GameObject _mainCamera;
 
         [SerializeField] private GameObject _hand;
-        [SerializeField] private BaseEquipment _inHandObject;
+        //[SerializeField] private BaseEquipment _inHandObject;
 
 
         private const float _threshold = 0.01f;
@@ -131,6 +134,9 @@ namespace StarterAssets
 
         private bool _stopPerson;
         public bool _camZoom = true;
+
+        private Player _player;
+
         private bool IsCurrentDeviceMouse
         {
             get
@@ -153,10 +159,10 @@ namespace StarterAssets
             }
         }
 
-        public static ThirdPersonController Instance { get; private set; }  
 
         private void Start()
         {
+            _player = new Player(this);
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             _transposer = Cinemachine.GetCinemachineComponent<CinemachineFramingTransposer>();
 
@@ -177,8 +183,6 @@ namespace StarterAssets
 
             //BaseTool shovel = GameObject.Find("Shovel").GetComponent<Shovel>();
             //shovel.Pickup(_hand);
-
-            Instance = this;
         }
 
         private void Update()
@@ -208,14 +212,26 @@ namespace StarterAssets
             }
          
 
-            if (Input.GetKeyDown(KeyCode.Q) && _inHandObject != null)
+            if (Input.GetKeyDown(KeyCode.Q) && !_player.HandIsEmpty())
             {
-                _inHandObject.Drop();
+                _player.DropHandEntity();
             }
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 Application.Quit();
+            }
+
+            if (Input.GetKeyDown(KeyCode.E) && TriggerArea.CurrentActive != null)
+            {
+                if (TriggerArea.CurrentActive.Entity.IsItem)
+                {
+                    _player.PickupHandEntity(TriggerArea.CurrentActive.Entity);
+                }
+                else if(TriggerArea.CurrentActive.Entity.CanUse(_player.HandEntity))
+                {
+                    TriggerArea.CurrentActive.Entity.Use(_player.HandEntity);
+                }
             }
         }
 
@@ -507,15 +523,6 @@ namespace StarterAssets
             get => _hand;
         }
 
-        public BaseEquipment InHandObject
-        {
-            get => _inHandObject;
-            set => _inHandObject = value;
-        }
 
-        public Type GetInHandToolType()
-        {
-            return InHandObject == null ? null : InHandObject.GetType();
-        }
     }
 }

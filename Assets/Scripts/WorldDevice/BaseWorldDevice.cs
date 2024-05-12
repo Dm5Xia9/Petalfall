@@ -7,6 +7,6 @@ namespace Assets.Scripts.WorldDevice
         [SerializeField] private int _startUsingTime;
         [SerializeField] private int _endUsingTime;
 
-        public override bool TriggerEnable => DayAndNightControl.Now.Hour >= _startUsingTime && DayAndNightControl.Now.Hour < _endUsingTime;
+        //public override bool TriggerEnable => DayAndNightControl.Now.Hour >= _startUsingTime && DayAndNightControl.Now.Hour < _endUsingTime;
     }
 }

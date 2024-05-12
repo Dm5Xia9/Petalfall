@@ -9,26 +9,26 @@ namespace Assets.Scripts.Equipment
         [SerializeField] private int _waterCount;
         [SerializeField] private int _waterCapacity;
 
-        public override int? Counter => _waterCount;
-        public override string Message => "Лейка";
+        //public override int? Counter => _waterCount;
+        //public override string Message => "Лейка";
 
-        public override void Use(GameObject gameObject)
-        {
-            Flowerbed flowerbed = gameObject.GetComponent<Flowerbed>();
-            flowerbed.Watering();
-            _waterCount--;
+        //public override void Use(GameObject gameObject)
+        //{
+        //    Flowerbed flowerbed = gameObject.GetComponent<Flowerbed>();
+        //    flowerbed.Watering();
+        //    _waterCount--;
 
-            base.Use(gameObject);
-        }
+        //    base.Use(gameObject);
+        //}
 
-        public bool IsWaterlogged()
-        {
-            return _waterCount > 0;
-        }
+        //public bool IsWaterlogged()
+        //{
+        //    return _waterCount > 0;
+        //}
 
-        public void Fill()
-        {
-            _waterCount = _waterCapacity;
-        }
+        //public void Fill()
+        //{
+        //    _waterCount = _waterCapacity;
+        //}
     }
 }

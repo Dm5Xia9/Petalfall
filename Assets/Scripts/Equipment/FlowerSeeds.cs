@@ -10,24 +10,24 @@ namespace Assets.Scripts.Equipment
         [SerializeField] private FlowerParameters _flower;
         [SerializeField] private int _count;
 
-        public override int? Counter => _count;
-        protected override bool IsOver => _count <= 0;
+        //public override int? Counter => _count;
+        //protected override bool IsOver => _count <= 0;
 
-        public override string Message => "Семена";
+        //public override string Message => "Семена";
 
-        public void Init(FlowerParameters flower, int count = 1)
-        {
-            _flower = flower;
-            _count = count;
-        }
+        //public void Init(FlowerParameters flower, int count = 1)
+        //{
+        //    _flower = flower;
+        //    _count = count;
+        //}
 
-        public override void Use(GameObject gameObject)
-        {
-            Flowerbed flowerbed = gameObject.GetComponent<Flowerbed>();
-            flowerbed.Plant(_flower);
-            _count--;
-            base.Use(gameObject);
-        }
+        //public override void Use(GameObject gameObject)
+        //{
+        //    Flowerbed flowerbed = gameObject.GetComponent<Flowerbed>();
+        //    flowerbed.Plant(_flower);
+        //    _count--;
+        //    base.Use(gameObject);
+        //}
 
     }
 }

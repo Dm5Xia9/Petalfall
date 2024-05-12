@@ -4,6 +4,7 @@ using DialogueEditor;
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -35,7 +36,7 @@ public class StartScene : MonoBehaviour
 
     [SerializeField] private Vector2 _act5Move;
     [SerializeField] private GameObject _act5Pos;
-    [SerializeField] private Shovel _act5Shovel;
+    [SerializeField] private ShovelScript _act5Shovel;
 
     [SerializeField] private Vector2 _act6Move;
     [SerializeField] private GameObject _act6Pos;
@@ -69,7 +70,7 @@ public class StartScene : MonoBehaviour
     {
         if(_actNumber == 0 && !_personController.HasMovePoint)
         {
-            ThirdPersonController.Instance.playerInput.enabled = false;
+            Player.Instance.UserInputDisable();
             //_personController.StopPerson();
             StartCoroutine(Act2Car());
             _personController.Teleport(_act1Position.transform.position);
@@ -135,7 +136,7 @@ public class StartScene : MonoBehaviour
         }
         else if(_actNumber == 6 && !_personController.HasMovePoint)
         {
-            _act5Shovel.Pickup();
+            Player.Instance.PickupHandEntity(_act5Shovel.Entity);
 
             _inputs.MoveInput(-_act5Move);
             _personController.MoveToPoint(_act4Pos.transform.position, p =>
@@ -167,7 +168,7 @@ public class StartScene : MonoBehaviour
         }
         else if (_actNumber == 9 && !_personController.HasMovePoint)
         {
-            _act5Shovel.Drop();
+            Player.Instance.DropHandEntity();
             _act5Shovel.enabled = false;
             _inputs.MoveInput(_act6Move);
             ff = Instantiate(_atrtree);
@@ -192,7 +193,7 @@ public class StartScene : MonoBehaviour
             StartCoroutine(Act7Povorot());
             _act5Shovel.enabled = true;
             _act5Shovel.transform.position = _act7Pos.transform.position;
-            ThirdPersonController.Instance.playerInput.enabled = true;
+            Player.Instance.UserInputEnable();
 
             _actNumber++;
         }

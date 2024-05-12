@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class TriggerArea : MonoBehaviour
 {
-    public List<ActivationEvent> events = new List<ActivationEvent>();
-    public ActivationEvent CurrentActive;
+    public List<IEntityMonoBehaviour> events = new List<IEntityMonoBehaviour>();
+    public IEntityMonoBehaviour CurrentActive;
 
     public void Toggle()
     {
-        ActivationEvent near = FindNearestGameObject();
+        IEntityMonoBehaviour near = FindNearestGameObject();
         if (CurrentActive == near)
         {
             return;
@@ -17,31 +17,35 @@ public class TriggerArea : MonoBehaviour
 
         if (CurrentActive != null)
         {
-            CurrentActive.NotActive();
+            CurrentActive.HiddenPlaceholder();
         }
 
 
         CurrentActive = near;
         if (near != null)
         {
-            CurrentActive.Active();
+            CurrentActive.VisablePlaceholder();
         }
 
     }
 
 
-    public ActivationEvent FindNearestGameObject()
+    public IEntityMonoBehaviour FindNearestGameObject()
     {
-        ActivationEvent nearestObject = null;
+        IEntityMonoBehaviour nearestObject = null;
         float nearestDistance = float.MaxValue;
 
         events.RemoveAll((x) => x == null);
 
         // Перебираем все объекты в списке
-        foreach (ActivationEvent obj in events.Where(p => p.TriggerEnable))
+        foreach (IEntityMonoBehaviour obj in events.Where(p => p.CanTargetEvent()))
         {
+            if(Player.Instance.HandEntity != null && Player.Instance.HandEntity == obj)
+            {
+                continue;
+            }
             // Вычисляем расстояние до каждого объекта
-            float distance = Vector3.Distance(transform.position, obj.transform.position);
+            float distance = Vector3.Distance(transform.position, obj.GameObject.transform.position);
 
             // Если расстояние меньше, чем до ближайшего, обновляем ближайший объект
             if (distance < nearestDistance)
