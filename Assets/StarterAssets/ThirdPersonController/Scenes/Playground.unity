@@ -6340,6 +6340,50 @@ Transform:
   - {fileID: 1162189336}
   m_Father: {fileID: 882308539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &782729087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 782729089}
+  - component: {fileID: 782729088}
+  m_Layer: 0
+  m_Name: EntityGarbageCollector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &782729088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782729087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11946be0bb417ae4c8072cd4395baea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &782729089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782729087}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.374803, y: 0.82009447, z: 3.5020168}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &787748077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16151,21 +16195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17079a923dc343b4399c3b0255589562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 0}
-  MessageDamping: {x: 0, y: 0, z: 0}
-  Radius: 0
-  Distance: 0
-  MessageObject: {fileID: 0}
-  BackAndForthAnimation: {fileID: 0}
-  IsActive: 0
-  NPCConversation: {fileID: 157161028}
-  PRs:
-  - {fileID: 778943427}
-  - {fileID: 1587569508}
-  - {fileID: 1412792947}
-  isFirst: 1
-  ConversationManager: {fileID: 862373908}
-  _abobusDialog: 0
 --- !u!54 &1590827344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22329,3 +22358,4 @@ SceneRoots:
   - {fileID: 1188839062}
   - {fileID: 754119447}
   - {fileID: 1754704571}
+  - {fileID: 782729089}
