@@ -17,7 +17,7 @@ public class WateringCan : CountableEntity<WateringCan, WateringCanScript>
 
     public override bool CanUse(IEntity target)
     {
-        throw new NotImplementedException();
+        return true;
     }
 
     public bool IsWaterlogged()

@@ -13,14 +13,11 @@
 
     public override bool CanUse(IEntity target)
     {
-        return base.CanUse(target) && target is Flowerbed;
+        return base.CanUse(target);
     }
 
     public override void Use(IEntity target)
     {
-        var flowerbed = target as Flowerbed;
-        flowerbed.Fertilize();
-        Count--;
         base.Use(target);
     }
 }

@@ -1,14 +1,8 @@
-using Assets.Scripts.Equipment;
 using Cinemachine;
 using DialogueEditor;
 using StarterAssets;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Threading;
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Windows;
 
 public class StartScene : MonoBehaviour
 {
@@ -59,6 +53,7 @@ public class StartScene : MonoBehaviour
     private GameObject ff;
     public Animator _animator;
 
+    public static bool IsScenePlay = true;
 
     private void Start()
     {
@@ -68,8 +63,9 @@ public class StartScene : MonoBehaviour
     }
     private void Update()
     {
-        if(_actNumber == 0 && !_personController.HasMovePoint)
+        if (_actNumber == 0 && !_personController.HasMovePoint)
         {
+            IsScenePlay = true;
             Player.Instance.UserInputDisable();
             //_personController.StopPerson();
             StartCoroutine(Act2Car());
@@ -82,7 +78,7 @@ public class StartScene : MonoBehaviour
             StartCoroutine(Act1Corr(1f, 0f));
             _actNumber++;
         }
-        else if(_actNumber == 1 && !_personController.HasMovePoint)
+        else if (_actNumber == 1 && !_personController.HasMovePoint)
         {
             _inputs.MoveInput(_act2Move);
             _personController.MoveToPoint(_act2Pos.transform.position, p =>
@@ -95,7 +91,7 @@ public class StartScene : MonoBehaviour
             //_personController.StopPerson();
             //ConversationManager.StartConversation(_act2Dialog);
         }
-        else if(_actNumber == 3)
+        else if (_actNumber == 3)
         {
             _personController._camZoom = false;
             StartCoroutine(Act3CamDistance());
@@ -134,7 +130,7 @@ public class StartScene : MonoBehaviour
             //_personController.StopPerson();
             //ConversationManager.StartConversation(_act2Dialog);
         }
-        else if(_actNumber == 6 && !_personController.HasMovePoint)
+        else if (_actNumber == 6 && !_personController.HasMovePoint)
         {
             Player.Instance.PickupHandEntity(_act5Shovel.Entity);
 
@@ -183,7 +179,7 @@ public class StartScene : MonoBehaviour
 
             _actNumber++;
         }
-        else if(_actNumber == 10 && !_personController.HasMovePoint)
+        else if (_actNumber == 10 && !_personController.HasMovePoint)
         {
             ff.SetActive(false);
             _personController._camZoom = true;
@@ -200,7 +196,7 @@ public class StartScene : MonoBehaviour
         else if (_actNumber == 12)
         {
             _animator.SetBool(Animator.StringToHash("StartAnim"), true);
-
+            IsScenePlay = false;
         }
     }
 
@@ -253,7 +249,7 @@ public class StartScene : MonoBehaviour
 
     private IEnumerator Act3CamDistance()
     {
-        
+
         while (_transposer.m_CameraDistance < _act3CamDistance)
         {
             _transposer.m_CameraDistance += _act3CamSpeed * Time.deltaTime;

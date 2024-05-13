@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 191882179176747526}
-  - component: {fileID: 1875505624294369224}
+  - component: {fileID: -6519268770756846721}
   - component: {fileID: 6066734371716279129}
   m_Layer: 0
   m_Name: Computer
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 1369143711306945334}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1875505624294369224
+--- !u!114 &-6519268770756846721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,16 +43,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 4552134885773541659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a91ab8f736d32c44807e6503d093b41, type: 3}
+  m_Script: {fileID: 11500000, guid: b28e6568b98a785468fb8ee5d6f0879b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
-  _startUsingTime: 7
-  _endUsingTime: 19
+  _messageDamping: {x: 0, y: 0, z: 0}
+  _offsetInHand: {x: 0, y: 0, z: 0}
+  _rotateInHand: {x: 0, y: 0, z: 0, w: 0}
+  _startTimePoint:
+    Hour: 7
+    Minutes: 0
+  _endTimePoint:
+    Hour: 19
+    Minutes: 0
+  _fertilizerSourceObject: {fileID: 4581319960650331874, guid: 83e2dd5a2dd7b7b49bb2d1418e95cc9b, type: 3}
 --- !u!65 &6066734371716279129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -159,13 +162,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a91ab8f736d32c44807e6503d093b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
+  MessagePrefab: {fileID: 0}
+  MessageDamping: {x: 0, y: 0, z: 0}
   Radius: 0
   Distance: 0
   IsActive: 0
   _startUsingTime: 0
   _endUsingTime: 0
+  _fertilizerSource: {fileID: 0}
 --- !u!65 &5840858988642134800
 BoxCollider:
   m_ObjectHideFlags: 0

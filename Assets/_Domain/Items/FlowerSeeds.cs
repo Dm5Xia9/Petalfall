@@ -10,7 +10,6 @@ public class FlowerSeeds : CountableEntity<FlowerSeeds, FlowerSeedsScript>
     public override string Title => "Семена";
 
     public override bool IsItem => true;
-    public override bool CanCleaned => Count <= 0;
 
     public override bool CanUse(IEntity target)
     {
@@ -19,9 +18,6 @@ public class FlowerSeeds : CountableEntity<FlowerSeeds, FlowerSeedsScript>
 
     public override void Use(IEntity target)
     {
-        var flowerbed = target as Flowerbed;
-        flowerbed.Plant(Unity.Flower);
-        Count--;
         base.Use(target);
     }
 }

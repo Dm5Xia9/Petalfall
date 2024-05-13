@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Flowers;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FlowerSeedsScript : CountableMonoBehaviour<FlowerSeeds, FlowerSeedsScript>
 {
@@ -18,4 +17,3 @@ public class FlowerSeedsScript : CountableMonoBehaviour<FlowerSeeds, FlowerSeeds
     }
 }
 
- 

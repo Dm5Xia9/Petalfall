@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2205906603240761425}
-  - component: {fileID: 8830940781797514265}
+  - component: {fileID: -7546702643886626758}
   - component: {fileID: 1740829841466908317}
   - component: {fileID: -4133693697519116115}
   m_Layer: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 6433597863855237044}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8830940781797514265
+--- !u!114 &-7546702643886626758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,14 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4704934626414402860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0adcac7f778031469c54c85a25c1306, type: 3}
+  m_Script: {fileID: 11500000, guid: 0aa8cae8c7220ea419b41d33b4d21c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messageDamping: {x: 0, y: 0, z: 0}
   _offsetInHand: {x: 0.1, y: 0.05, z: -0.1}
   _rotateInHand: {x: 0.5282757, y: -0.41912127, z: -0.26986238, w: 0.6873401}
 --- !u!65 &1740829841466908317

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 using static UnityEditor.Experimental.GraphView.Port;
 using static UnityEngine.EventSystems.EventTrigger;
 
-public abstract class CountableEntity<TEntity, TMono> : Entity<TEntity, TMono>
-       where TMono : CountableMonoBehaviour<TEntity, TMono>
+public abstract class CountableEntity<TEntity, TMono> : Entity<TEntity, TMono>, ICountableEntity where TMono : CountableMonoBehaviour<TEntity, TMono>
        where TEntity : CountableEntity<TEntity, TMono>
 {
     protected CountableEntity(TMono gameObject) : base(gameObject)
     {
-        Capacity = int.MaxValue;
+
     }
 
+    public override bool CanCleaned => Count <= 0;
 
     public virtual int Count
     {

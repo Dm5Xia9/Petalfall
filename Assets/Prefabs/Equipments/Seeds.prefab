@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8319446204429019513}
-  - component: {fileID: -3437093448464646433}
+  - component: {fileID: -8718639381209674567}
   - component: {fileID: 4695222958327739591}
   - component: {fileID: -8509531053245743544}
   m_Layer: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 519083860742690165}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3437093448464646433
+--- !u!114 &-8718639381209674567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,16 +44,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4988701554844535395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e5d1187f13f1ff43a6280940e4fa902, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ecfa14737a7cf640978d43faad72012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messageDamping: {x: 0, y: 0, z: 0}
   _offsetInHand: {x: -0.05, y: 0.45, z: 0.085}
   _rotateInHand: {x: -0.07624895, y: -0.13502865, z: -0.9859939, w: 0.061395288}
+  _count: 0
+  _capacity: 0
   _flower:
     BudColors: []
     StemType: 0
@@ -62,7 +60,6 @@ MonoBehaviour:
     LeafCount: 0
     BranchCount: 0
     LightPowerBud: 0
-  _count: 0
 --- !u!65 &4695222958327739591
 BoxCollider:
   m_ObjectHideFlags: 0

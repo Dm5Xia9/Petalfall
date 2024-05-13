@@ -90,8 +90,10 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     public void HiddenPlaceholder()
     {
         IsVisablePlaceholder = false;
-
-        _entityPlaceholder.SetActive(false);
+        if(_entityPlaceholder != null)
+        {
+            _entityPlaceholder.SetActive(false);
+        }
     }
 
     public void VisablePlaceholder()
@@ -127,5 +129,17 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     public void ToHandPosition()
     {
        transform.SetLocalPositionAndRotation(_offsetInHand, _rotateInHand);
+    }
+
+    public bool IsDestroyed()
+    {
+        try
+        {
+            return GameObject == null;
+        }
+        catch
+        {
+            return true;
+        }
     }
 }

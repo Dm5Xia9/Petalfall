@@ -1,9 +1,4 @@
-﻿using Assets.Scripts.Equipment;
-using Assets.Scripts.Flowers;
-using Assets.Scripts.WorldDevice;
-using static UnityEngine.EventSystems.EventTrigger;
-
-public class Bench : Entity<Bench, BenchScript>
+﻿public class Bench : Entity<Bench, BenchScript>
 {
     public Bench(BenchScript gameObject) : base(gameObject)
     {

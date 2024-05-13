@@ -1,8 +1,4 @@
-﻿using Assets.Scripts.Flowers;
-using System;
-using UnityEngine;
-
-public class Pruner : Entity<Pruner, PrunerScript>
+﻿public class Pruner : Entity<Pruner, PrunerScript>
 {
     public Pruner(PrunerScript gameObject) : base(gameObject)
     {
@@ -21,9 +17,6 @@ public class Pruner : Entity<Pruner, PrunerScript>
 
     public override void Use(IEntity target)
     {
-        Flowerbed flowerbed = target as Flowerbed;
-        FlowerParameters flower = flowerbed.Collect();
-        Player.Instance.Balance += 100;
         base.Use(target);
     }
 }

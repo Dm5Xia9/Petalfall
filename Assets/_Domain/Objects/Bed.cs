@@ -25,11 +25,10 @@ public class Bed : Entity<Bed, BedScript>
             DayAndNightControl.Now.Month, 
             DayAndNightControl.Now.Day + (time.currentHour >= 6 ? 1 : 0), 
             Unity.WakeUpTime.Hour, 
-            Unity.WakeUpTime.Minutes ?? 0, 
+            Unity.WakeUpTime.Minutes, 
             0);
 
         Unity.SkipTime(awakeTime);
         PlayerEvents.WentToBed.Trigger();
     }
 }
-

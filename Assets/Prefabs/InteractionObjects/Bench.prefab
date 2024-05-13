@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6526113296702815758}
-  - component: {fileID: -5488741811903697794}
+  - component: {fileID: 7396284823424694730}
   - component: {fileID: 5863203409554806114}
   m_Layer: 0
   m_Name: Bench
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 5296373956540354329}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5488741811903697794
+--- !u!114 &7396284823424694730
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,16 +43,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2408141953717362853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17cf804f4df3a084baad04a387971f3f, type: 3}
+  m_Script: {fileID: 11500000, guid: 790d7d2a0f3df664bb067ffa51141d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
-  _startUsingTime: 6
-  _endUsingTime: 21
+  _messageDamping: {x: 0, y: 0, z: 0}
+  _offsetInHand: {x: 0, y: 0, z: 0}
+  _rotateInHand: {x: 0, y: 0, z: 0, w: 0}
+  _startTimePoint:
+    Hour: 6
+    Minutes: 0
+  _endTimePoint:
+    Hour: 21
+    Minutes: 0
   _skippedMinutes: 60
   _speed: 0.1
 --- !u!65 &5863203409554806114

@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+[System.Serializable]
 public class TimePoint
 {
-    public TimePoint(int hour, int? minutes = null)
+    public TimePoint()
+    {
+
+    }
+    public TimePoint(int hour, int minutes)
     {
         Hour = hour;
         Minutes = minutes;
     }
 
-    public int Hour { get; private set; }
-    public int? Minutes { get; private set; }
+    public int Hour;
+    public int Minutes;
 
     public static bool InTimeline(TimePoint startTimePoint, TimePoint endTimePoint)
     {

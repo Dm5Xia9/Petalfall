@@ -76,7 +76,30 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
     {
         if (Player.Instance.HandIsEmpty() == false)
         {
-            Player.Instance.UseHand(this);
+            if(target is FlowerSeeds seeds)
+            {
+                this.Plant(seeds.Unity.Flower);
+                seeds.Count--;
+            }
+            else if(target is WateringCan watering && watering.IsWaterlogged())
+            {
+                this.Watering();
+                watering.Count--;
+            }
+            else if (target is Fertilizer fertilizer)
+            {
+                this.Fertilize();
+                fertilizer.Count--;
+            }
+            else if (target is Pruner pruner)
+            {
+                this.Collect();
+                Player.Instance.Balance += 100;
+            }
+            else if (target is Shovel shovel)
+            {
+                this.Collect();
+            }
         }
         else
         {

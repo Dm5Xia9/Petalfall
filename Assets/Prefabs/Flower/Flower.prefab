@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326740924505605572}
-  - component: {fileID: 2465662716751885308}
+  - component: {fileID: 8644866265133944814}
   - component: {fileID: 2101053383834310127}
   m_Layer: 0
   m_Name: Flower
@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2465662716751885308
+--- !u!114 &8644866265133944814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,16 +42,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2812757736071859530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e90aa5d8f0943f04ebe35d38b633f1ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d241e5b4bba6a547ac355fa2dfd30d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messageDamping: {x: 0, y: 1, z: 0}
+  _offsetInHand: {x: 0, y: 0, z: 0}
+  _rotateInHand: {x: 0, y: 0, z: 0, w: 0}
+  _startTimePoint:
+    Hour: 0
+    Minutes: 0
+  _endTimePoint:
+    Hour: 0
+    Minutes: 0
+  _ignoreTimeline: 1
   _flowerGenerator: {fileID: 3274407079511438027, guid: bcf64c942c51bda41ab6cefd9326e4bd, type: 3}
-  _baseSeeds: {fileID: -3437093448464646433, guid: 8cd9a14a8fd202043a8f686422581f1b, type: 3}
+  _baseSeeds: {fileID: -8718639381209674567, guid: 8cd9a14a8fd202043a8f686422581f1b, type: 3}
   _flowerParameters:
     BudColors: []
     StemType: 0

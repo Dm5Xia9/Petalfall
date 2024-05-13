@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3503317291053842109}
-  - component: {fileID: -8721284915678409584}
+  - component: {fileID: 2825227004616821096}
   - component: {fileID: -9070276465415352935}
   m_Layer: 0
   m_Name: Bed
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 4578722608521795986}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8721284915678409584
+--- !u!114 &2825227004616821096
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,18 +43,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 3678251623959969566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56552bd0d8645c848a303c837e8ad940, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e6aa048c41db504caa6d94d84fc245e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
-  _startUsingTime: 0
-  _endUsingTime: 24
-  _worldGenerator: {fileID: 0}
-  _wakeUpTime: 6
+  _messageDamping: {x: 0, y: 0, z: 0}
+  _offsetInHand: {x: 0, y: 0, z: 0}
+  _rotateInHand: {x: 0, y: 0, z: 0, w: 0}
+  _startTimePoint:
+    Hour: 0
+    Minutes: 0
+  _endTimePoint:
+    Hour: 24
+    Minutes: 0
+  _wakeUpTime:
+    Hour: 6
+    Minutes: 0
   _speed: 0.2
 --- !u!65 &-9070276465415352935
 BoxCollider:

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498409264343245919}
-  - component: {fileID: 5013890681493365686}
+  - component: {fileID: 6191931160828673492}
   - component: {fileID: -5742896905980596682}
   - component: {fileID: 4023897614842562169}
   m_Layer: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 6207749960688119544}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5013890681493365686
+--- !u!114 &6191931160828673492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,18 +44,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4472857705006495961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe0d73c0a5d42046a1d5bb5491f84d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 93e8d3577844ab342bc5a632a19d04b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
+  _messageDamping: {x: 0, y: 0, z: 0}
   _offsetInHand: {x: -0.5, y: 0.4, z: -0.4}
-  _rotateInHand: {x: 0.48540613, y: -0.025823914, z: -0.83995306, w: 0.24123177}
-  _waterCount: 0
-  _waterCapacity: 3
+  _rotateInHand: {x: 0.48540613, y: -0.025823906, z: -0.83995306, w: 0.24123178}
+  _count: 0
+  _capacity: 3
 --- !u!65 &-5742896905980596682
 BoxCollider:
   m_ObjectHideFlags: 0

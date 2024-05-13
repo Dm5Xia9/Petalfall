@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4749694948726220824}
-  - component: {fileID: 5800570880785195900}
+  - component: {fileID: 4581319960650331874}
   - component: {fileID: 2600432849096778762}
   m_Layer: 0
   m_Name: FertilizzerCar
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 3407339402055865251}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5800570880785195900
+--- !u!114 &4581319960650331874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,22 +43,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 4588172064645221694}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2258163583acb0544b0e68240bac0c70, type: 3}
+  m_Script: {fileID: 11500000, guid: 379e5e871e69e1a4da626271bc0a542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
-  _startUsingTime: 7
-  _endUsingTime: 19
-  _baseFertilizer: {fileID: 8432276107877680531, guid: ca26399c112afb84ab14ed7e76c14646, type: 3}
-  _fertilizerCount: 1
+  _messageDamping: {x: 0, y: 0, z: 0}
+  _offsetInHand: {x: 0, y: 0, z: 0}
+  _rotateInHand: {x: 0, y: 0, z: 0, w: 0}
+  _count: 1
+  _capacity: 0
+  _startTimePoint:
+    Hour: 7
+    Minutes: 0
+  _endTimePoint:
+    Hour: 19
+    Minutes: 0
+  _baseFertilizerObject: {fileID: 0}
   _startRoadPos: {fileID: 0}
   _centerRoadPos: {fileID: 0}
   _endRoadPos: {fileID: 0}
   _carSpeed: 3
+  _isHere: 1
 --- !u!65 &2600432849096778762
 BoxCollider:
   m_ObjectHideFlags: 0

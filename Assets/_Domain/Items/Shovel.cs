@@ -20,8 +20,6 @@ public class Shovel : Entity<Shovel, ShovelScript>
 
     public override void Use(IEntity target)
     {
-        Flowerbed flowerbed = target as Flowerbed;
-        flowerbed.Collect();
         base.Use(target);
     }
 }

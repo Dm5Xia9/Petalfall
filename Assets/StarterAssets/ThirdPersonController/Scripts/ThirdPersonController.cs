@@ -1,6 +1,4 @@
 ﻿using System;
-
-using Assets.Scripts.Equipment;
 using Cinemachine;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
@@ -152,6 +150,8 @@ namespace StarterAssets
 
         private void Awake()
         {
+            _player = new Player(this);
+
             // get a reference to our main camera
             if (_mainCamera == null)
             {
@@ -162,7 +162,6 @@ namespace StarterAssets
 
         private void Start()
         {
-            _player = new Player(this);
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             _transposer = Cinemachine.GetCinemachineComponent<CinemachineFramingTransposer>();
 
@@ -210,7 +209,7 @@ namespace StarterAssets
                     }
                 }
             }
-         
+
 
             if (Input.GetKeyDown(KeyCode.Q) && !_player.HandIsEmpty())
             {
@@ -228,7 +227,7 @@ namespace StarterAssets
                 {
                     _player.PickupHandEntity(TriggerArea.CurrentActive.Entity);
                 }
-                else if(TriggerArea.CurrentActive.Entity.CanUse(_player.HandEntity))
+                else if (TriggerArea.CurrentActive.Entity.CanUse(_player.HandEntity))
                 {
                     TriggerArea.CurrentActive.Entity.Use(_player.HandEntity);
                 }
@@ -343,19 +342,19 @@ namespace StarterAssets
                 float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
                     RotationSmoothTime);
 
-                if(_stopPerson == false)
+                if (_stopPerson == false)
                 {
                     // rotate to face input direction relative to camera position
                     transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
                 }
- 
+
             }
 
 
             Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
 
-            if(_stopPerson == false)
+            if (_stopPerson == false)
             {
                 _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
                            new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);

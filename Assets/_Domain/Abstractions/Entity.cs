@@ -14,6 +14,7 @@ public abstract class Entity<TEntity, TMono> : IEntity
     {
         Id = id;
         Unity = unity;
+        EntityGarbageCollector.RegisterEntity(this);
     }
 
     public Guid Id { get; private set; }
@@ -27,6 +28,8 @@ public abstract class Entity<TEntity, TMono> : IEntity
     public virtual string ActionMessage => null;
 
     IEntityMonoBehaviour IEntity.Unity => Unity;
+
+    public bool IsDeleted { get; set; }
 
     public virtual void Use(IEntity target)
     {

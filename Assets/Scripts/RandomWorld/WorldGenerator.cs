@@ -7,7 +7,7 @@ public class WorldGenerator : MonoBehaviour
     [SerializeField] private GameObject _objectCollection;
     [SerializeField] private GameObject[] _prefabs;
 
-    [SerializeField] private float _minY = 0.7f;
+    [SerializeField] private float _minY = 1.2f;
     [SerializeField] private float _minHeight = -20.0f;
     [SerializeField] private float _maxHeight = 20.0f;
     [SerializeField] private float _terrainNoiseScale = 0.05f;
@@ -27,11 +27,13 @@ public class WorldGenerator : MonoBehaviour
     private void Start()
     {
         _terrain = GetComponent<Terrain>();
+        PlayerEvents.WentToBed.Subscribe(Generate);
         Generate();
     }
 
     public void Generate()
     {
+        Debug.Log("GENERATE");
         StartCoroutine(GeneratorCoroutine());
     }
 

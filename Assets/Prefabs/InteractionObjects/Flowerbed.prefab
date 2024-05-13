@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2804603213662156401}
-  - component: {fileID: -3441402374341165931}
+  - component: {fileID: 4034430062303429178}
   - component: {fileID: 6302524334021315019}
   m_Layer: 0
   m_Name: Flowerbed
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 8695202809658743799}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3441402374341165931
+--- !u!114 &4034430062303429178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,31 +43,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2236566535685075400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b08756c6991ce6479c517254c695513, type: 3}
+  m_Script: {fileID: 11500000, guid: 975bfce123484d64fa00fc9153365760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessagePrefab: {fileID: 8885828249256306355, guid: 865b1705f8f24e94faa22689fb1d116e, type: 3}
-  MessageDamping: {x: 0, y: 1, z: 0}
-  Radius: 0
-  Distance: 0
-  IsActive: 0
-  _startUsingTime: 6
-  _endUsingTime: 21
-  _baseSeeds: {fileID: -3437093448464646433, guid: 8cd9a14a8fd202043a8f686422581f1b, type: 3}
-  _flowerGenerator: {fileID: 3274407079511438027, guid: bcf64c942c51bda41ab6cefd9326e4bd, type: 3}
-  _flowerParameters:
-    BudColors: []
-    StemType: 0
-    BudType: 0
-    StemLength: 0
-    LeafCount: 0
-    BranchCount: 0
-    LightPowerBud: 0
+  _messageDamping: {x: 0, y: 0, z: 0}
+  _offsetInHand: {x: 0, y: 0, z: 0}
+  _rotateInHand: {x: 0, y: 0, z: 0, w: 0}
+  _startTimePoint:
+    Hour: 6
+    Minutes: 0
+  _endTimePoint:
+    Hour: 21
+    Minutes: 0
+  _baseSeeds: {fileID: 0}
+  _flowerGenerator: {fileID: 0}
   _flowerModel: {fileID: 0}
   _flowerOffset: {x: 0, y: 0.5, z: -0.35}
-  _flowerStage: 0
   _wateringPeriod: 36
-  _fertilizerCount: 0
   _nearRadius: 10
   _selfGeneWeight: 0.7
   _nearGeneWeight: 0.27
