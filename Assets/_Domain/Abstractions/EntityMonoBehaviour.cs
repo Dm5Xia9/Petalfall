@@ -16,7 +16,7 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     private GameObject _entityPlaceholder;
     private BackAndForthAnimation _backAndForthAnimation;
     private bool _isDropped = true;
-
+    private ActivationVariables _activationVariables;
     public TEntity Entity { get; private set; }
     public bool IsVisablePlaceholder { get; private set; }
     IEntity IEntityMonoBehaviour.Entity => Entity;
@@ -36,15 +36,8 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
         _entityPlaceholder.transform.SetParent(transform);
         _entityPlaceholder.SetActive(false);
         _backAndForthAnimation = _entityPlaceholder.GetComponent<BackAndForthAnimation>();
-        var txt = _entityPlaceholder.GetComponent<ActivationVariables>();
-        if (string.IsNullOrEmpty(Entity.ActionMessage))
-        {
-            txt.Text.text = $"{Entity.Title}";
-        }
-        else
-        {
-            txt.Text.text = $"{Entity.ActionMessage}";
-        }
+        _activationVariables = _entityPlaceholder.GetComponent<ActivationVariables>();
+  
     }
     protected abstract TEntity CreateEntity();
 
@@ -55,7 +48,14 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
 
     protected virtual void ProtectedUpdate()
     {
-
+        if (string.IsNullOrEmpty(Entity.ActionMessage))
+        {
+            _activationVariables.Text.text = $"{Entity.Title}";
+        }
+        else
+        {
+            _activationVariables.Text.text = $"{Entity.ActionMessage}";
+        }
     }
 
     public bool CanTargetEvent()

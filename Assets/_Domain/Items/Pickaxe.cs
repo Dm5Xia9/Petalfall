@@ -8,15 +8,18 @@
 
     public override bool IsItem => true;
 
-    public override bool CanCleaned => false;
+    public override bool CanCleaned => Unity.Strength <= 0;
 
     public override bool CanUse(IEntity target)
     {
-        return true;
+        return Unity.Strength >= 0;
     }
 
     public override void Use(IEntity target)
     {
+        Unity.Strength--;
         base.Use(target);
     }
+
+
 }
