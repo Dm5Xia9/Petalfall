@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static UnityEditor.Experimental.GraphView.Port;
-using static UnityEngine.EventSystems.EventTrigger;
-
-public abstract class CountableEntity<TEntity, TMono> : Entity<TEntity, TMono>, ICountableEntity where TMono : CountableMonoBehaviour<TEntity, TMono>
-       where TEntity : CountableEntity<TEntity, TMono>
+﻿public abstract class CountableEntity<TEntity, TMono> : Entity<TEntity, TMono>, ICountableEntity
+    where TEntity : CountableEntity<TEntity, TMono>
+    where TMono : CountableMonoBehaviour<TEntity, TMono>
 {
     protected CountableEntity(TMono gameObject) : base(gameObject)
-    {
-
-    }
+    { }
 
     public override bool CanCleaned => Count <= 0;
 

@@ -1,6 +1,8 @@
-﻿using Assets.Scripts;
-using System;
+﻿using System;
 using System.Collections.Generic;
+
+using Assets.Scripts;
+
 using UnityEngine;
 
 public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
@@ -43,7 +45,7 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
         if (!Unity.InTimeline())
             return false;
 
-        if(target == null)
+        if (target == null)
             return _flowerbedStage == FlowerbedStage.Harvest;
 
         switch (_flowerbedStage)
@@ -76,12 +78,12 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
     {
         if (Player.Instance.HandIsEmpty() == false)
         {
-            if(target is FlowerSeeds seeds)
+            if (target is FlowerSeeds seeds)
             {
                 this.Plant(seeds.Unity.Flower);
                 seeds.Count--;
             }
-            else if(target is WateringCan watering && watering.IsWaterlogged())
+            else if (target is WateringCan watering && watering.IsWaterlogged())
             {
                 this.Watering();
                 watering.Count--;
@@ -160,7 +162,7 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
 
     private void Pollination()
     {
-        var flowerbeds = Unity.GetAllFlowerbeds();
+        Flowerbed[] flowerbeds = Unity.GetAllFlowerbeds();
         List<Flowerbed> nearFlowerbeds = new(), farFlowerbeds = new();
         foreach (Flowerbed flowerbed in flowerbeds)
         {
@@ -185,7 +187,7 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
         foreach (Flowerbed far in farFlowerbeds)
             parent.AddWeight(far._flowerParameters, Unity.FarGeneWeight / nearFlowerbeds.Count);
 
-        _flowerParameters = FlowerParameters.Combine(parent);
+        _flowerParameters = FlowerParametersUtils.Combine(parent);
     }
 
 

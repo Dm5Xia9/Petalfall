@@ -1,5 +1,7 @@
-﻿using StarterAssets;
-using System;
+﻿using System;
+
+using StarterAssets;
+
 using UnityEngine;
 
 public class Player
@@ -32,19 +34,17 @@ public class Player
 
     public IEntity? HandEntity { get; set; }
 
-    public void PickupHandEntity(IEntity entity)
+    public void PickupHandEntity(IEntity target)
     {
         if (!HandIsEmpty()) return;
 
-        HandEntity = entity;
+        HandEntity = target;
         HandEntity.Unity.GameObject.transform.SetParent(_controller.Hand.transform, false);
         HandEntity.Unity.ToHandPosition();
 
-        var rigidBody = HandEntity.Unity.GameObject.GetComponent<Rigidbody>();
+        Rigidbody rigidBody = HandEntity.Unity.GameObject.GetComponent<Rigidbody>();
         if (rigidBody != null)
-        {
             rigidBody.isKinematic = true;
-        }
         HandEntity.Unity.HiddenPlaceholder();
     }
 
@@ -52,23 +52,20 @@ public class Player
     {
         HandEntity.Unity.GameObject.transform.SetParent(null, true);
 
-        var rigidBody = HandEntity.Unity.GameObject.GetComponent<Rigidbody>();
+        Rigidbody rigidBody = HandEntity.Unity.GameObject.GetComponent<Rigidbody>();
         if (rigidBody != null)
-        {
             rigidBody.isKinematic = false;
-        }
-        HandEntity = null;
 
+        HandEntity = null;
     }
 
     public bool UseHand(IEntity target)
     {
-        if (target.CanUse(HandEntity))
-        {
-            target.Use(HandEntity);
-            return true;
-        }
-        return false;
+        if (target.CanUse(HandEntity) == false)
+            return false;
+
+        target.Use(HandEntity);
+        return true;
     }
 
     public void UserInputDisable()
@@ -85,5 +82,4 @@ public class Player
     {
         return _controller.playerInput.enabled == true;
     }
-
 }

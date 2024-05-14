@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+
 using UnityEngine;
 
 public class FlowerScript : ObjectMonoBehaviour<Flower, FlowerScript>
@@ -20,7 +21,7 @@ public class FlowerScript : ObjectMonoBehaviour<Flower, FlowerScript>
     protected override void ProtectedStart()
     {
         _seed = Random.Range(0, 1_000_000);
-        _flowerParameters = FlowerParameters.GetRandom();
+        _flowerParameters = FlowerParametersUtils.GetRandom();
 
         FlowerModelGenerator flowerModel = Instantiate(_flowerGenerator, transform.position, transform.rotation, transform);
         flowerModel.GenerateFlower(_flowerParameters, _seed);
@@ -36,7 +37,7 @@ public class FlowerScript : ObjectMonoBehaviour<Flower, FlowerScript>
 
     private IEnumerator CreateSeed()
     {
-        var seeds = Instantiate(_baseSeeds, transform.parent);
+        FlowerSeedsScript seeds = Instantiate(_baseSeeds, transform.parent);
         seeds.Init(_flowerParameters, Random.Range(1, _maxSeeds + 1));
         yield return null;
 

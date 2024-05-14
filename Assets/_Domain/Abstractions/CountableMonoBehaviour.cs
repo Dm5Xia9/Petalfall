@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public abstract class CountableMonoBehaviour<TEntity, TMono> : EntityMonoBehaviour<TEntity, TMono> where TEntity : CountableEntity<TEntity, TMono>
+public abstract class CountableMonoBehaviour<TEntity, TMono> : EntityMonoBehaviour<TEntity, TMono>
+    where TEntity : CountableEntity<TEntity, TMono>
     where TMono : CountableMonoBehaviour<TEntity, TMono>
 {
     [SerializeField] private int _count;

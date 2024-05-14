@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class EventSystemCollection
 {
-    private ConcurrentDictionary<string, List<Action<object>>> _subscribers = new ConcurrentDictionary<string, List<Action<object>>>();
-    private object _lock = new object();
+    private ConcurrentDictionary<string, List<Action<object>>> _subscribers = new();
+    private object _lock = new();
 
-    public static EventSystemCollection Instance { get; private set; }
     static EventSystemCollection()
     {
         Instance = new EventSystemCollection();
     }
+
+    public static EventSystemCollection Instance { get; private set; }
 
     public void Trigger(string eventId, object value)
     {
@@ -22,10 +20,8 @@ public class EventSystemCollection
         {
             if (_subscribers.ContainsKey(eventId))
             {
-                foreach(var subscriber in _subscribers[eventId])
-                {
+                foreach (Action<object> subscriber in _subscribers[eventId])
                     subscriber(value);
-                }
             }
         }
     }
@@ -35,13 +31,9 @@ public class EventSystemCollection
         lock (_lock)
         {
             if (_subscribers.ContainsKey(eventId))
-            {
                 _subscribers[eventId].Add(action);
-            }
             else
-            {
-                _subscribers[eventId] = new List<Action<object>> { action };
-            }
+                _subscribers[eventId] = new() { action };
         }
     }
 
@@ -60,7 +52,7 @@ public class EventProtocol<T>
 
     public static EventProtocol<T> Create(string name)
     {
-        var protocol = new EventProtocol<T>(name);
+        EventProtocol<T> protocol = new(name);
         return protocol;
     }
 
@@ -86,7 +78,7 @@ public class EventProtocol
 
     public static EventProtocol Create(string name)
     {
-        var protocol = new EventProtocol(name);
+        EventProtocol protocol = new(name);
         return protocol;
     }
 

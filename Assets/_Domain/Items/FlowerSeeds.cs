@@ -1,11 +1,7 @@
-﻿using System;
-using UnityEngine;
-
-public class FlowerSeeds : CountableEntity<FlowerSeeds, FlowerSeedsScript>
+﻿public class FlowerSeeds : CountableEntity<FlowerSeeds, FlowerSeedsScript>
 {
     public FlowerSeeds(FlowerSeedsScript gameObject) : base(gameObject)
-    {
-    }
+    { }
 
     public override string Title => "Семена";
 

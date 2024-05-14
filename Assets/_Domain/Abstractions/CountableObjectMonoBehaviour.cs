@@ -4,7 +4,6 @@ public abstract class CountableObjectMonoBehaviour<TEntity, TMono> : CountableMo
     where TEntity : CountableEntity<TEntity, TMono>
     where TMono : CountableMonoBehaviour<TEntity, TMono>
 {
-
     [SerializeField] private TimePoint _startTimePoint;
     [SerializeField] private TimePoint _endTimePoint;
 

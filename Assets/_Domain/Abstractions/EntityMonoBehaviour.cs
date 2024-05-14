@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEntityMonoBehaviour
     where TEntity : IEntity
@@ -18,7 +13,7 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     private bool _isDropped = true;
 
     public TEntity Entity { get; private set; }
-    public bool IsVisablePlaceholder { get; private set; }
+    public bool IsVisiblePlaceholder { get; private set; }
     IEntity IEntityMonoBehaviour.Entity => Entity;
 
     public GameObject GameObject => gameObject;
@@ -31,21 +26,18 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     protected virtual void ProtectedStart()
     {
         Entity = CreateEntity();
+
         _entityPlaceholder = Instantiate(Player.Instance.Controller.EntityPlaceholder, transform.position + _messageDamping, Quaternion.identity);
         _entityPlaceholder.GetComponent<Canvas>().worldCamera = Camera.main;
         _entityPlaceholder.transform.SetParent(transform);
         _entityPlaceholder.SetActive(false);
+
         _backAndForthAnimation = _entityPlaceholder.GetComponent<BackAndForthAnimation>();
-        var txt = _entityPlaceholder.GetComponent<ActivationVariables>();
-        if (string.IsNullOrEmpty(Entity.ActionMessage))
-        {
-            txt.Text.text = $"{Entity.Title}";
-        }
-        else
-        {
-            txt.Text.text = $"{Entity.ActionMessage}";
-        }
+        ActivationVariables txt = _entityPlaceholder.GetComponent<ActivationVariables>();
+        txt.Text.text = string.IsNullOrEmpty(Entity.ActionMessage) ?
+            $"{Entity.Title}" : $"{Entity.ActionMessage}";
     }
+
     protected abstract TEntity CreateEntity();
 
     private void Update()
@@ -54,9 +46,7 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     }
 
     protected virtual void ProtectedUpdate()
-    {
-
-    }
+    { }
 
     public bool CanTargetEvent()
     {
@@ -67,9 +57,7 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
         if (Entity.IsItem)
         {
             if (_isDropped)
-            {
                 eventEnable = true;
-            }
         }
         else
         {
@@ -78,10 +66,6 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
         return eventEnable;
     }
 
-    /// <summary>
-    /// Проверяем, можно ли использовать сущность как объект
-    /// </summary>
-    /// <returns></returns>
     protected bool CanUseAsObject()
     {
         return Entity.IsItem == false && Entity.CanUse(Player.Instance.HandEntity);
@@ -89,19 +73,17 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
 
     public void HiddenPlaceholder()
     {
-        IsVisablePlaceholder = false;
-        if(_entityPlaceholder != null)
-        {
+        IsVisiblePlaceholder = false;
+        if (_entityPlaceholder != null)
             _entityPlaceholder.SetActive(false);
-        }
     }
 
-    public void VisablePlaceholder()
+    public void VisiblePlaceholder()
     {
         if (CanTargetEvent() is false)
             return;
 
-        IsVisablePlaceholder = true;
+        IsVisiblePlaceholder = true;
         _entityPlaceholder.SetActive(true);
         _backAndForthAnimation.Restart();
     }
@@ -128,7 +110,7 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
 
     public void ToHandPosition()
     {
-       transform.SetLocalPositionAndRotation(_offsetInHand, _rotateInHand);
+        transform.SetLocalPositionAndRotation(_offsetInHand, _rotateInHand);
     }
 
     public bool IsDestroyed()

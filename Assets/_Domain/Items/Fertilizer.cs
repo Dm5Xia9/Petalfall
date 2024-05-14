@@ -1,15 +1,15 @@
 ﻿public class Fertilizer : CountableEntity<Fertilizer, FertilizerScript>
 {
     public Fertilizer(FertilizerScript gameObject) : base(gameObject)
-    {
-    }
+    { }
 
     public override string Title => "Удобрение";
 
     public override bool IsItem => true;
 
-    public override bool CanCleaned => false;
     public int OnePrice => Unity.OnePrice;
+
+    public override bool CanCleaned => false;
 
     public override bool CanUse(IEntity target)
     {

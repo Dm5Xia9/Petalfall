@@ -1,13 +1,7 @@
-﻿using System;
-using UnityEngine;
-
-public class WateringCan : CountableEntity<WateringCan, WateringCanScript>
+﻿public class WateringCan : CountableEntity<WateringCan, WateringCanScript>
 {
-
     public WateringCan(WateringCanScript gameObject) : base(gameObject)
-    {
-
-    }
+    { }
 
     public override string Title => "Лейка";
 

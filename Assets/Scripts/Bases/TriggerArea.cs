@@ -24,7 +24,7 @@ public class TriggerArea : MonoBehaviour
         CurrentActive = near;
         if (near != null)
         {
-            CurrentActive.VisablePlaceholder();
+            CurrentActive.VisiblePlaceholder();
         }
 
     }

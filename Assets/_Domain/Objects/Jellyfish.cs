@@ -4,6 +4,7 @@ public class Jellyfish : Entity<Jellyfish, JellyfishScript>
 {
     public bool _isFirstDialog = true;
     public bool _isActiveDialog = false;
+
     public Jellyfish(JellyfishScript gameObject) : base(gameObject)
     {
         ConversationManager.OnConversationEnded += () =>
@@ -13,18 +14,18 @@ public class Jellyfish : Entity<Jellyfish, JellyfishScript>
         };
     }
 
-    public override bool CanCleaned => false;
-
     public override string Title => "Котомедузка";
 
     public override bool IsItem => false;
+
+    public override bool CanCleaned => false;
 
     public override bool CanUse(IEntity target)
     {
         return Unity.InTimeline() && _isActiveDialog == false;
     }
 
-    public override void Use(IEntity entity)
+    public override void Use(IEntity target)
     {
         Player.Instance.UserInputDisable();
         if (_isFirstDialog == true)
@@ -38,5 +39,7 @@ public class Jellyfish : Entity<Jellyfish, JellyfishScript>
             Unity.StartRandomHints();
             _isActiveDialog = true;
         }
+
+        base.Use(target);
     }
 }

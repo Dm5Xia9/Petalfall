@@ -1,11 +1,7 @@
-﻿using System;
-using UnityEngine;
-
-public class Shovel : Entity<Shovel, ShovelScript>
+﻿public class Shovel : Entity<Shovel, ShovelScript>
 {
     public Shovel(ShovelScript gameObject) : base(gameObject)
-    {
-    }
+    { }
 
     public override string Title => "Лопата";
 
