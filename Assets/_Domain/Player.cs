@@ -47,7 +47,7 @@ public class Player
 
     public void DropHandEntity()
     {
-        HandEntity.Unity.GameObject.transform.SetParent(Controller.ItemsParent, true);
+        HandEntity.Unity.GameObject.transform.SetParent(Controller.CurrentWorld.ItemsParent, true);
 
         if (HandEntity.Unity.Rigidbody != null)
             HandEntity.Unity.Rigidbody.isKinematic = false;

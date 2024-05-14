@@ -10,7 +10,7 @@ public class FertilizerSourceScript : CountableObjectMonoBehaviour<FertilizerSou
     [SerializeField] private float _carSpeed;
     [SerializeField] private bool _isHere = true;
 
-    public Fertilizer BaseFertilizer => _baseFertilizerObject.Entity;
+    public FertilizerScript BaseFertilizerScript => _baseFertilizerObject;
 
     protected override FertilizerSource CreateEntity()
     {

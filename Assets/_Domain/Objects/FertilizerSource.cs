@@ -18,7 +18,7 @@
 
     public int GetPrice()
     {
-        return Unity.BaseFertilizer.OnePrice;
+        return Unity.BaseFertilizerScript.OnePrice;
     }
 
     public void AddFertilizer()
