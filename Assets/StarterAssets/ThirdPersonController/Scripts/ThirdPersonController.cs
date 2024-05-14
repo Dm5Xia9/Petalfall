@@ -18,6 +18,7 @@ namespace StarterAssets
     {
         public GameObject EntityPlaceholder;
         public TriggerArea TriggerArea;
+        public Transform ItemsParent;
 
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]

@@ -12,8 +12,6 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     private BackAndForthAnimation _backAndForthAnimation;
     private bool _isDropped = true;
 
-    private Transform _baseParent;
-
     private ActivationVariables _activationVariables;
     public TEntity Entity { get; private set; }
     public bool IsVisiblePlaceholder { get; private set; }
@@ -21,7 +19,7 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
 
     public GameObject GameObject => gameObject;
 
-    public Transform BaseParent => _baseParent;
+    public Rigidbody? Rigidbody { get; private set; }
 
     private void Start()
     {
@@ -39,9 +37,9 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
 
         _backAndForthAnimation = _entityPlaceholder.GetComponent<BackAndForthAnimation>();
         _activationVariables = _entityPlaceholder.GetComponent<ActivationVariables>();
-
-        _baseParent = transform.parent;
+        Rigidbody = GetComponent<Rigidbody>();
     }
+
     protected abstract TEntity CreateEntity();
 
     private void Update()

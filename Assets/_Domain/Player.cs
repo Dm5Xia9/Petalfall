@@ -1,8 +1,5 @@
-﻿using System;
-
-using StarterAssets;
-
-using UnityEngine;
+﻿using StarterAssets;
+using System;
 
 public class Player
 {
@@ -42,19 +39,18 @@ public class Player
         HandEntity.Unity.GameObject.transform.SetParent(_controller.Hand.transform, false);
         HandEntity.Unity.ToHandPosition();
 
-        Rigidbody rigidBody = HandEntity.Unity.GameObject.GetComponent<Rigidbody>();
-        if (rigidBody != null)
-            rigidBody.isKinematic = true;
+        if (HandEntity.Unity.Rigidbody != null)
+            HandEntity.Unity.Rigidbody.isKinematic = true;
+
         HandEntity.Unity.HiddenPlaceholder();
     }
 
     public void DropHandEntity()
     {
-        HandEntity.Unity.GameObject.transform.SetParent(HandEntity.Unity.BaseParent, true);
+        HandEntity.Unity.GameObject.transform.SetParent(Controller.ItemsParent, true);
 
-        Rigidbody rigidBody = HandEntity.Unity.GameObject.GetComponent<Rigidbody>();
-        if (rigidBody != null)
-            rigidBody.isKinematic = false;
+        if (HandEntity.Unity.Rigidbody != null)
+            HandEntity.Unity.Rigidbody.isKinematic = false;
 
         HandEntity = null;
     }
