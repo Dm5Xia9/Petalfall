@@ -12,11 +12,15 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     private BackAndForthAnimation _backAndForthAnimation;
     private bool _isDropped = true;
 
+    private Transform _baseParent;
+
     public TEntity Entity { get; private set; }
     public bool IsVisiblePlaceholder { get; private set; }
     IEntity IEntityMonoBehaviour.Entity => Entity;
 
     public GameObject GameObject => gameObject;
+
+    public Transform BaseParent => _baseParent;
 
     private void Start()
     {
@@ -36,6 +40,8 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
         ActivationVariables txt = _entityPlaceholder.GetComponent<ActivationVariables>();
         txt.Text.text = string.IsNullOrEmpty(Entity.ActionMessage) ?
             $"{Entity.Title}" : $"{Entity.ActionMessage}";
+
+        _baseParent = transform.parent;
     }
 
     protected abstract TEntity CreateEntity();

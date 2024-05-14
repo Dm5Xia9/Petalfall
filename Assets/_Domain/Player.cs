@@ -50,7 +50,7 @@ public class Player
 
     public void DropHandEntity()
     {
-        HandEntity.Unity.GameObject.transform.SetParent(null, true);
+        HandEntity.Unity.GameObject.transform.SetParent(HandEntity.Unity.BaseParent, true);
 
         Rigidbody rigidBody = HandEntity.Unity.GameObject.GetComponent<Rigidbody>();
         if (rigidBody != null)
