@@ -1,8 +1,7 @@
 ﻿public class Pickaxe : Entity<Pickaxe, PickaxeScript>
 {
     public Pickaxe(PickaxeScript gameObject) : base(gameObject)
-    {
-    }
+    { }
 
     public override string Title => "Кирка";
 
@@ -18,8 +17,7 @@
     public override void Use(IEntity target)
     {
         Unity.Strength--;
+
         base.Use(target);
     }
-
-
 }

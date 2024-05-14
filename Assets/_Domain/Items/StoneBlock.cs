@@ -1,8 +1,7 @@
 ﻿public class StoneBlock : Entity<StoneBlock, StoneBlockScript>
 {
     public StoneBlock(StoneBlockScript gameObject) : base(gameObject)
-    {
-    }
+    { }
 
     public override string Title => $"Камень {Unity.Resources}";
 
@@ -12,7 +11,7 @@
 
     public override bool CanUse(IEntity target)
     {
-        return target is Pickaxe pickaxe && 
+        return target is Pickaxe pickaxe &&
             pickaxe.Unity.Level >= Unity.MinPickaxeLevel &&
             pickaxe.CanUse(this);
     }
@@ -21,6 +20,7 @@
     {
         target.Use(this);
         Unity.Resources -= Unity.OneClickResources;
+
         base.Use(target);
     }
 }

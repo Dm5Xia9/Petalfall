@@ -1,7 +1,4 @@
-﻿using static Cinemachine.DocumentationSortingAttribute;
-using static UnityEngine.Rendering.ReloadAttribute;
-
-public class Fertilizer : CountableEntity<Fertilizer, FertilizerScript>
+﻿public class Fertilizer : CountableEntity<Fertilizer, FertilizerScript>
 {
     public Fertilizer(FertilizerScript gameObject) : base(gameObject)
     { }
