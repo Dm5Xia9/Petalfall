@@ -14,6 +14,7 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
 
     private Transform _baseParent;
 
+    private ActivationVariables _activationVariables;
     public TEntity Entity { get; private set; }
     public bool IsVisiblePlaceholder { get; private set; }
     IEntity IEntityMonoBehaviour.Entity => Entity;
@@ -37,13 +38,10 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
         _entityPlaceholder.SetActive(false);
 
         _backAndForthAnimation = _entityPlaceholder.GetComponent<BackAndForthAnimation>();
-        ActivationVariables txt = _entityPlaceholder.GetComponent<ActivationVariables>();
-        txt.Text.text = string.IsNullOrEmpty(Entity.ActionMessage) ?
-            $"{Entity.Title}" : $"{Entity.ActionMessage}";
+        _activationVariables = _entityPlaceholder.GetComponent<ActivationVariables>();
 
         _baseParent = transform.parent;
     }
-
     protected abstract TEntity CreateEntity();
 
     private void Update()
@@ -52,7 +50,16 @@ public abstract class EntityMonoBehaviour<TEntity, TMono> : MonoBehaviour, IEnti
     }
 
     protected virtual void ProtectedUpdate()
-    { }
+    {
+        if (string.IsNullOrEmpty(Entity.ActionMessage))
+        {
+            _activationVariables.Text.text = $"{Entity.Title}";
+        }
+        else
+        {
+            _activationVariables.Text.text = $"{Entity.ActionMessage}";
+        }
+    }
 
     public bool CanTargetEvent()
     {
