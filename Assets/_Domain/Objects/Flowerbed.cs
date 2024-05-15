@@ -1,8 +1,6 @@
-﻿using System;
+﻿using Assets.Scripts;
+using System;
 using System.Collections.Generic;
-
-using Assets.Scripts;
-
 using UnityEngine;
 
 public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
@@ -42,6 +40,9 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
 
     public override bool CanUse(IEntity target)
     {
+        if (base.CanUse(target))
+            return true;
+
         if (!Unity.InTimeline())
             return false;
 
@@ -76,6 +77,8 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
 
     public override void Use(IEntity target)
     {
+        base.Use(target);
+
         if (Player.Instance.HandIsEmpty() == false)
         {
             if (target is FlowerSeeds seeds)
@@ -109,7 +112,6 @@ public class Flowerbed : Entity<Flowerbed, FlowerbedScript>
             Collect();
             Unity.CreateSeedsAndPickup(_flowerParameters, seedsCount);
         }
-        base.Use(target);
     }
 
     public void Tick()

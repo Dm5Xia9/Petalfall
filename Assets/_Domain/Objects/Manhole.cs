@@ -11,16 +11,15 @@
 
     public override bool CanUse(IEntity target)
     {
-        return Unity.InTimeline() &&
+        return base.CanUse(target) || (Unity.InTimeline() &&
             Player.Instance.HandIsEmpty() == false &&
             Player.Instance.HandEntity is WateringCan can &&
-            can.IsWaterlogged() == false;
+            can.IsWaterlogged() == false);
     }
 
     public override void Use(IEntity target)
     {
-        ((WateringCan)Player.Instance.HandEntity).Fill();
-
         base.Use(target);
+        ((WateringCan)Player.Instance.HandEntity).Fill();
     }
 }

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class EntityGarbageCollector : MonoBehaviour
@@ -19,9 +16,9 @@ public class EntityGarbageCollector : MonoBehaviour
     {
         _entities.RemoveAll(p => p == null);
 
-        foreach(var entity in _entities.Where(p => p.CanCleaned).ToList())
+        foreach (var entity in _entities.Where(p => p.CanCleaned || p.IsDeleted).ToList())
         {
-            if(Player.Instance.HandEntity == entity)
+            if (Player.Instance.HandEntity == entity)
             {
                 Player.Instance.DropHandEntity();
             }

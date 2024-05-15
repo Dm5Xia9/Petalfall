@@ -9,7 +9,7 @@
 
     public override bool CanUse(IEntity target)
     {
-        return base.CanUse(target) && target is Flowerbed;
+        return base.CanUse(target) || target is Flowerbed;
     }
 
     public override void Use(IEntity target)

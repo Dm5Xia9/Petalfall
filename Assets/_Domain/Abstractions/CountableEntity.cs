@@ -21,7 +21,7 @@
 
     public override bool CanUse(IEntity target)
     {
-        return Count > 0;
+        return base.CanUse(target) || Count > 0;
     }
 
 }

@@ -21,7 +21,14 @@ public abstract class Entity<TEntity, TMono> : IEntity
     public abstract string Title { get; }
     public virtual string ActionMessage => null;
 
-    public abstract bool CanUse(IEntity target);
+    public virtual bool CanUse(IEntity target)
+    {
+        if (IsItem == false)
+        {
+            return target is Pickaxe pickaxe && pickaxe.CanUse(this);
+        }
+        return false;
+    }
     public abstract bool IsItem { get; }
 
     public abstract bool CanCleaned { get; }
@@ -31,5 +38,12 @@ public abstract class Entity<TEntity, TMono> : IEntity
     public bool IsDeleted { get; set; }
 
     public virtual void Use(IEntity target)
-    { }
+    {
+        if (IsItem == false && target is Pickaxe pickaxe)
+        {
+            pickaxe.Use(this);
+            IsDeleted = true;
+            throw new Exception("destroy");
+        }
+    }
 }

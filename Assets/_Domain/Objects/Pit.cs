@@ -13,15 +13,16 @@ public class Pit : Entity<Pit, PitScript>
 
     public override bool CanUse(IEntity target)
     {
-        return Unity.InTimeline() &&
-            Player.Instance.HandIsEmpty();
+        return base.CanUse(target) || (Unity.InTimeline() &&
+            Player.Instance.HandIsEmpty());
     }
 
     public override void Use(IEntity target)
     {
-        Player.Instance.Controller.Teleport(SpawnPoint2.SpawnPoints.GetRandom().transform.position);
-        DayAndNightControl.Instance.SecondsInAFullDay = 360;
 
         base.Use(target);
+
+        Player.Instance.Controller.Teleport(SpawnPoint2.SpawnPoints.GetRandom().transform.position);
+        DayAndNightControl.Instance.SecondsInAFullDay = 360;
     }
 }

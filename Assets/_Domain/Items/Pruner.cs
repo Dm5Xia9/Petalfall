@@ -11,7 +11,7 @@
 
     public override bool CanUse(IEntity target)
     {
-        return target is Flowerbed;
+        return base.CanUse(target);
     }
 
     public override void Use(IEntity target)

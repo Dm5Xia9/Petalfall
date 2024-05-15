@@ -11,7 +11,7 @@
 
     public override bool CanUse(IEntity target)
     {
-        return target is Shovel;
+        return base.CanUse(target);
     }
 
     public override void Use(IEntity target)

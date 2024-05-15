@@ -13,11 +13,13 @@ public class Bed : Entity<Bed, BedScript>
 
     public override bool CanUse(IEntity target)
     {
-        return Unity.InTimeline();
+        return base.CanUse(target) || Unity.InTimeline();
     }
 
     public override void Use(IEntity target)
     {
+        base.Use(target);
+
         DayAndNightControl time = DayAndNightControl.Instance;
         DateTime awakeTime = new(
             DayAndNightControl.Now.Year,
@@ -30,6 +32,6 @@ public class Bed : Entity<Bed, BedScript>
         Unity.SkipTime(awakeTime);
         PlayerEvents.WentToBed.Trigger();
 
-        base.Use(target);
+
     }
 }

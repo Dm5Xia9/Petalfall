@@ -11,7 +11,7 @@
 
     public override bool CanUse(IEntity target)
     {
-        return true;
+        return base.CanUse(target);
     }
 
     public bool IsWaterlogged()

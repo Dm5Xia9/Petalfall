@@ -11,13 +11,13 @@
 
     public override bool CanUse(IEntity target)
     {
-        return Unity.Strength >= 0;
+        return base.CanUse(target) || Unity.Strength >= 0;
     }
 
     public override void Use(IEntity target)
     {
-        Unity.Strength--;
-
         base.Use(target);
+
+        Unity.Strength--;
     }
 }

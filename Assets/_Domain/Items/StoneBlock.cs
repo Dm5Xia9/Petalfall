@@ -20,7 +20,5 @@
     {
         target.Use(this);
         Unity.Resources -= Unity.OneClickResources;
-
-        base.Use(target);
     }
 }

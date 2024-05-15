@@ -13,14 +13,16 @@ public class Bench : Entity<Bench, BenchScript>
 
     public override bool CanUse(IEntity target)
     {
-        return Unity.InTimeline();
+        return base.CanUse(target) || Unity.InTimeline();
     }
 
     public override void Use(IEntity target)
     {
+        base.Use(target);
+
         DateTime endTime = DayAndNightControl.Now.AddMinutes(Unity.SkippedMinutes);
         Unity.SkipTime(endTime);
 
-        base.Use(target);
+
     }
 }

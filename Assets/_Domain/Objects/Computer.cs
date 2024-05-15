@@ -11,16 +11,18 @@
 
     public override bool CanUse(IEntity target)
     {
-        return Unity.InTimeline() &&
-            Player.Instance.EnoughBalance(Unity.FertilizerSource.GetPrice());
+        return base.CanUse(target) || (Unity.InTimeline() &&
+            Player.Instance.EnoughBalance(Unity.FertilizerSource.GetPrice()));
     }
 
     public override void Use(IEntity target)
     {
+
+        base.Use(target);
+
         Unity.FertilizerSource.AddFertilizer();
         Player.Instance.Balance -= Unity.FertilizerSource.GetPrice();
 
-        base.Use(target);
     }
 
 }

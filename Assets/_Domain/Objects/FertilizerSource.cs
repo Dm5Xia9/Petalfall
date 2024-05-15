@@ -11,9 +11,9 @@
 
     public override bool CanUse(IEntity target)
     {
-        return base.CanUse(target) &&
-            Unity.InTimeline() &&
-            Player.Instance.HandIsEmpty();
+        return base.CanUse(target) ||
+            (Unity.InTimeline() &&
+            Player.Instance.HandIsEmpty());
     }
 
     public int GetPrice()
@@ -28,10 +28,11 @@
 
     public override void Use(IEntity target)
     {
+        base.Use(target);
+
         Unity.GiveFertilizer(Unity.Count);
         Unity.Count = 0;
 
-        base.Use(target);
     }
 
 }

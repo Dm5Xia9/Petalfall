@@ -18,5 +18,4 @@ public abstract class ObjectMonoBehaviour<TEntity, TMono> : EntityMonoBehaviour<
 
         return TimePoint.InTimeline(_startTimePoint, _endTimePoint);
     }
-
 }

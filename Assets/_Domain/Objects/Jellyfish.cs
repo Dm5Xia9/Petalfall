@@ -22,11 +22,13 @@ public class Jellyfish : Entity<Jellyfish, JellyfishScript>
 
     public override bool CanUse(IEntity target)
     {
-        return Unity.InTimeline() && _isActiveDialog == false;
+        return base.CanUse(target) && (Unity.InTimeline() && _isActiveDialog == false);
     }
 
     public override void Use(IEntity target)
     {
+        base.Use(target);
+
         Player.Instance.UserInputDisable();
         if (_isFirstDialog == true)
         {
@@ -39,7 +41,5 @@ public class Jellyfish : Entity<Jellyfish, JellyfishScript>
             Unity.StartRandomHints();
             _isActiveDialog = true;
         }
-
-        base.Use(target);
     }
 }

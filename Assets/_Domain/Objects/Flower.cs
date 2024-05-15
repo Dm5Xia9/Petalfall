@@ -16,8 +16,8 @@
 
     public override void Use(IEntity target)
     {
-        Unity.Active();
-
         base.Use(target);
+
+        Unity.Active();
     }
 }
