@@ -35,12 +35,12 @@ public class TriggerArea : MonoBehaviour
         IEntityMonoBehaviour nearestObject = null;
         float nearestDistance = float.MaxValue;
 
-        events.RemoveAll((x) => x == null || x.IsDestroyed());
+        events.RemoveAll((x) => x == null || x.IsDestroyed() || x.Entity.IsDeleted);
 
         // Перебираем все объекты в списке
         foreach (IEntityMonoBehaviour obj in events.Where(p => p.CanTargetEvent()))
         {
-            if(Player.Instance.HandEntity != null && Player.Instance.HandEntity == obj.Entity)
+            if (Player.Instance.HandEntity != null && Player.Instance.HandEntity == obj.Entity)
             {
                 continue;
             }

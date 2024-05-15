@@ -39,7 +39,7 @@ public abstract class Entity<TEntity, TMono> : IEntity
 
     public virtual void Use(IEntity target)
     {
-        if (IsItem == false && target is Pickaxe pickaxe)
+        if (IsItem == false && target is Pickaxe pickaxe && IsDeleted == false)
         {
             pickaxe.Use(this);
             IsDeleted = true;
